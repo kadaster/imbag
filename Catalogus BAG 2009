@@ -1,0 +1,3414 @@
+# Catalogus basisregistraties adressen en gebouwen
+
+## Versie 2009
+
+# Colofon
+
+Versie
+> 2009
+
+Contactpersoon
+> Y. Ellenkamp
+
+> Portefeuille Plaatsvervangend Secretaris-Generaal,
+> Directie Informatievoorziening,
+> Afdeling Beleid Geo-informatie
+
+> Postbus 20951,
+> 2500 EZ  Den Haag,
+> Interne postcode 865
+
+Auteurs
+> M. Rietdijk
+
+# Inhoud
+
+# Voorwoord
+Deze catalogus beschrijft per object ("objecttype") de gegevens ("attribuutsoorten") die krachtens de artikelen 19 tot en met 25 van de Wet basisregistraties adressen en gebouwen in de adressenregistratie en gebouwenregistratie moeten worden opgenomen en definieert deze gegevens. Onderdeel van de gegevensdefinities vormen de zogenaamde "domeinen", die een omschrijving geven van de waarden die een gegeven kan aannemen. De catalogus bevat ook een nadere omschrijving van deze domeinen. 
+
+De catalogus is niet bedoeld als grondslag voor een databasestructuur. Daarom heeft geen volledige uitnormalisering plaatsgevonden. Dit betekent dat meervoudige relaties tussen objecttypen kunnen voorkomen. Ook meervoudig voorkomende attribuutsoorten zijn niet verder uitgenormaliseerd. Ten behoeve van de opbouw van de database kunnen derhalve aanvullende (hulp)objecttypen (zoals relatie-objecttypen) worden gedefinieerd.
+
+De catalogus is gebaseerd op een in het kader van een stelsel van basisregistraties ontwikkeld model. Daarbij worden objecttypen, attribuutsoorten en domeinen afzonderlijk van elkaar beschreven. Om het zoeken te vereenvoudigen staan de objecttypen alfabetisch geordend voor achtereenvolgens de adressenregistratie en de gebouwenregistratie. Voor elk objecttype zijn de attribuutsoorten vervolgens geordend op de code van het attribuutsoort. De in de catalogus gebruikte codering is uitsluitend bedoeld voor gebruik binnen deze catalogus. 
+
+Bij de attribuutsoorten wordt de zogenaamde XML-tag genoemd. Deze is van belang voor het berichtenverkeer dat is gedefinieerd in het kader van het gebruik van de basisregistratie. De indicatie materiële historie geeft aan of de basisregistratie op verzoek al of niet de materiële historie (wanneer is een verandering opgetreden in de werkelijkheid) kan leveren. De indicatie formele historie geeft aan of de basisregistratie op verzoek al of niet de formele historie (wanneer is in de administratie een verandering bekend en verwerkt) kan leveren. Door middel van het begrip kardinaliteit wordt bij elk attribuut vastgelegd of het betreffende attribuut al dan niet een waarde dient te bevatten. Hierbij betekent een aanduiding 1-1 dat een waarde verplicht is. Een aanduiding 0-1 betekent dat niet altijd een waarde hoeft te worden opgenomen.
+
+
+
+# Beschrijving objecttypen 
+
+## Adressenregistratie
+
+### Nummeraanduiding
+
+Naam objecttype
+NUMMERAANDUIDING
+Code objecttype
+11.2
+Afkorting objecttype
+NUM
+Definitie objecttype
+Een NUMMERAANDUIDING is een door het bevoegde gemeentelijke orgaan als zodanig toegekende aanduiding van een verblijfsobject, een standplaats of een ligplaats.
+Unieke aanduiding objecttype
+Identificatiecode nummeraanduiding
+Identificatie objecttype
+-
+Herkomst definitie objecttype
+Artikel 1 Wet basisregistraties adressen en gebouwen
+Datum opname objecttype
+Oktober 2002
+Relatie met semantische kern
+-
+Overzicht attributen behorende bij objecttype
+Code
+Gegevensnaam
+11.02
+Identificatiecode nummeraanduiding
+11.20
+Huisnummer
+11.21
+Indicatie geconstateerde nummeraanduiding
+11.30
+Huisletter
+11.40
+Huisnummertoevoeging
+11.60
+Postcode
+11.61
+Identificatiecode bijbehorende woonplaats
+11.62
+Datum begin geldigheid nummeraanduidinggegevens
+11.63
+Datum einde geldigheid nummeraanduidinggegevens
+11.64
+Aanduiding nummeraanduidinggegevens in onderzoek
+11.65
+Identificatiecode bijbehorende openbare ruimte
+11.66
+Type adresseerbaar object
+11.67
+Documentdatum mutatie nummeraanduiding
+11.68
+Documentnummer mutatie nummeraanduiding
+11.69
+Nummeraanduidingstatus
+
+Kwaliteitsbegrip objecttype
+Een NUMMERAANDUIDING bestaat als hiertoe door het bevoegde gemeentelijke orgaan als zodanig een besluit is genomen. Een NUMMERAANDUIDING heeft altijd betrekking op een enkel adresseerbaar object.
+Populatie objecttype
+De basisregistratie adressen bevat alle officieel als zodanig toegekende nummeraanduidingen op het Nederlandse grondgebied. Nieuwe nummeraanduidingen worden in de basisregistratie adressen opgenomen op basis van daartoe aangewezen brondocumenten waarin het ontstaan van de nummeraanduiding als zodanig is vastgelegd. Daarnaast bevat de basisregistratie adressen alle geconstateerde nummeraanduidingen in de zin van artikel 10, eerste lid, onderdeel b, van de wet. De gegevens over nummeraanduidingen blijven in de basisregistratie adressen aanwezig, ook indien de nummeraanduiding als zodanig wordt ingetrokken. De basisregistratie adressen bevat in principe geen gegevens over nummeraanduidingen die voor 1 juli 2009 zijn ingetrokken.
+Toelichting
+Nummeraanduidingen kunnen alleen worden toegekend aan als zodanig aangewezen adresseerbare objecttypen. De thans aangewezen adresseerbare objecttypen zijn verblijfsobjecten, standplaatsen en ligplaatsen. Deze objecttypen zijn gedefinieerd in het kader van de basisregistratie gebouwen.
+
+### Openbare ruimte
+
+Naam objecttype
+OPENBARE RUIMTE
+Code objecttype
+11.1
+Afkorting objecttype
+OPR
+Definitie objecttype
+Een OPENBARE RUIMTE is een door het bevoegde gemeentelijke orgaan als zodanig aangewezen en van een naam voorziene buitenruimte die binnen één woonplaats is gelegen.
+Unieke aanduiding objecttype
+Identificatiecode openbare ruimte
+Identificatie objecttype
+-
+Herkomst definitie objecttype
+Artikel 1 Wet basisregistraties adressen en gebouwen
+Datum opname objecttype
+Oktober 2002
+Relatie met semantische kern
+-
+Overzicht attributen behorende bij objecttype
+Code
+Gegevensnaam
+11.01
+Identificatiecode openbare ruimte
+11.10
+Naam openbare ruimte
+11.11
+Indicatie geconstateerde openbare ruimte
+11.12
+Datum begin geldigheid gegevens openbare ruimte
+11.13
+Datum einde geldigheid gegevens openbare ruimte
+11.14
+Aanduiding gegevens openbare ruimte in onderzoek
+11.15
+Identificatiecode bijbehorende woonplaats
+11.16
+Type openbare ruimte
+11.17
+Documentdatum mutatie openbare ruimte
+11.18
+Documentnummer mutatie openbare ruimte
+11.19
+Status openbare ruimte
+
+Kwaliteitsbegrip objecttype
+Een OPENBARE RUIMTE bestaat als hiertoe door het bevoegde gemeentelijke orgaan als zodanig een besluit is genomen.
+Populatie objecttype
+De basisregistratie adressen bevat alle officieel als zodanig aangewezen openbare ruimten op het Nederlands grondgebied. Nieuwe openbare ruimten worden in de basisregistratie adressen opgenomen op basis van daartoe aangewezen brondocumenten waarin het ontstaan van de openbare ruimte als zodanig is vastgelegd. Daarnaast bevat de basisregistratie adressen alle geconstateerde openbare ruimten in de zin van artikel 10, eerste lid, onderdeel b, van de wet. De gegevens over openbare ruimten blijven in de basisregistratie adressen aanwezig, ook indien de openbare ruimte als zodanig wordt ingetrokken. De basisregistratie adressen bevat in principe geen gegevens over openbare ruimten die voor 1 juli 2009 zijn ingetrokken.
+Toelichting
+Als openbare ruimte worden onder meer aangemerkt wegen, water, spoorbanen en landschappelijke gebieden.
+
+### Woonplaats
+
+Naam objecttype
+WOONPLAATS
+Code objecttype
+11.7
+Afkorting objecttype
+WPL
+Definitie objecttype
+Een WOONPLAATS is een door het bevoegde gemeentelijke orgaan als zodanig aangewezen en van een naam voorzien gedeelte van het grondgebied van de gemeente.
+Unieke aanduiding objecttype
+Woonplaatsidentificatie
+Identificatie objecttype
+-
+Herkomst definitie objecttype
+Artikel 1 Wet basisregistraties adressen en gebouwen
+Datum opname objecttype
+Augustus 2004
+Relatie met semantische kern
+Een WOONPLAATS is een TWEEDIMENöONAAL VIRTUEEL RUIMTELIJK OBJECT
+Overzicht attributen behorende bij objecttype
+Code
+Gegevensnaam
+11.03
+Woonplaatsidentificatie
+11.70
+Woonplaatsnaam
+11.71
+Woonplaatsgeometrie
+11.72
+Indicatie geconstateerde woonplaats
+11.73
+Datum begin geldigheid woonplaatsgegevens
+11.74
+Datum einde geldigheid woonplaatsgegevens
+11.75
+Aanduiding woonplaatsgegevens in onderzoek
+11.77
+Documentdatum mutatie woonplaats
+11.78
+Documentnummer mutatie woonplaats
+11.79
+Woonplaatsstatus
+
+Kwaliteitsbegrip objecttype
+Een WOONPLAATS bestaat als hiertoe door het bevoegde gemeentelijke orgaan als zodanig een besluit is genomen.
+Populatie objecttype
+De basisregistratie adressen bevat alle officieel als zodanig vastgestelde woonplaatsen op het Nederlandse grondgebied.  Nieuwe woonplaatsen worden in de basisregistratie adressen opgenomen op basis van daartoe aangewezen brondocumenten waarin het ontstaan van de woonplaats als zodanig is vastgelegd. Daarnaast bevat de basisregistratie adressen alle geconstateerde woonplaatsen in de zin van artikel 10, eerste lid, onderdeel b, van de wet. De gegevens over woonplaatsen blijven in de basisregistratie adressen aanwezig, ook indien de woonplaats als zodanig wordt opgeheven. De basisregistratie adressen bevat in principe geen gegevens over woonplaatsen die voor 1 juli 2009 zijn opgeheven.
+Toelichting
+De in de registratie opgenomen woonplaatsen komen in principe overeen met de woonplaatsentabel van TNT Post, met uitzondering van eventuele diakrieten en eventuele aanvullingen ter aanduiding van de provincie.
+
+
+## Gebouwenregistratie
+
+### Ligplaats
+
+Naam objecttype
+LIGPLAATS
+Code objecttype
+58
+Afkorting objecttype
+LIG
+Definitie objecttype
+Een LIGPLAATS is een door het bevoegde gemeentelijke orgaan als zodanig aangewezen plaats in het water al dan niet aangevuld met een op de oever aanwezig terrein of een gedeelte daarvan, die bestemd is voor het permanent afmeren van een voor woon-, bedrijfsmatige of recreatieve doeleinden geschikt vaartuig. 
+Unieke aanduiding objecttype
+Ligplaatsidentificatie
+Identificatie objecttype
+-
+Herkomst definitie objecttype
+Artikel 1 Wet basisregistraties adressen en gebouwen
+Datum opname objecttype
+Februari 2004
+Relatie met semantische kern
+Een LIGPLAATS is een DRIEDIMENöONAAL VIRTUEEL RUIMTELIJK OBJECT
+Overzicht attributen behorende bij objecttype
+Code
+Gegevensnaam
+58.01
+Ligplaatsidentificatie
+58.02
+Indicatie geconstateerde ligplaats
+58.03
+Ligplaatsstatus
+58.10
+Aanduiding hoofdadres ligplaats
+58.11
+Aanduiding nevenadressen ligplaats
+58.20
+Ligplaatsgeometrie
+58.91
+Datum begin geldigheid ligplaatsgegevens
+58.92
+Datum einde geldigheid ligplaatsgegevens
+58.93
+Aanduiding ligplaatsgegevens in onderzoek
+58.97
+Documentdatum mutatie ligplaats
+58.98
+Documentnummer mutatie ligplaats
+
+Kwaliteitsbegrip objecttype
+Een LIGPLAATS bestaat op het moment dat er sprake is van een aanwijzing als ligplaats door het bevoegde gemeentelijke orgaan. 
+Populatie objecttype
+De basisregistratie gebouwen omvat gegevens over alle ligplaatsen op het Nederlands grondgebied, die daartoe officieel als zodanig zijn aangewezen. Nieuwe ligplaatsen worden in de basisregistratie gebouwen opgenomen op basis van daartoe aangewezen brondocumenten, waarin het ontstaan van de ligplaats als zodanig is vastgelegd. Daarnaast bevat de basisregistratie gebouwen alle geconstateerde ligplaatsen in de zin van artikel 10, eerste lid, onderdeel b, van de wet. De gegevens over ligplaatsen blijven in de basisregistratie gebouwen aanwezig, ook indien de ligplaats als zodanig wordt ingetrokken. De basisregistratie gebouwen bevat in principe geen gegevens over ligplaatsen die voor 1 juli 2009 zijn ingetrokken.
+Toelichting
+Voor de interpretatie van de definitie van het objecttype LIGPLAATS wordt verwezen naar het objectenhandboek basisregistratie gebouwen.
+
+### Pand
+
+Naam objecttype
+PAND
+Code objecttype
+55
+Afkorting objecttype
+PND
+Definitie objecttype
+Een PAND is de kleinste bij de totstandkoming functioneel en bouwkundig-constructief zelfstandige eenheid die direct en duurzaam met de aarde is verbonden en betreedbaar en afsluitbaar is.
+Unieke aanduiding objecttype
+Pandidentificatie
+Identificatie objecttype
+-
+Herkomst definitie objecttype
+Artikel 1 Wet basisregistraties adressen en gebouwen
+Datum opname objecttype
+Februari 2004
+Relatie met semantische kern
+Een PAND is een DRIEDIMENöONAAL REEEL RUIMTELIJK OBJECT
+Overzicht attributen behorende bij objecttype
+Code
+Gegevensnaam
+55.01
+Pandidentificatie
+55.02
+Indicatie geconstateerd pand
+55.20
+Pandgeometrie
+55.30
+Oorspronkelijk bouwjaar pand
+55.31
+Pandstatus
+55.91
+Datum begin geldigheid pandgegevens
+55.92
+Datum einde geldigheid pandgegevens
+55.93
+Aanduiding pandgegevens in onderzoek
+55.97
+Documentdatum mutatie pand
+55.98
+Documentnummer mutatie pand
+
+Kwaliteitsbegrip objecttype
+-
+Populatie objecttype
+De basisregistratie gebouwen omvat gegevens over alle panden op het Nederlands grondgebied, die voldoen aan bovenstaande objectdefinitie. Gegevens over een nieuw pand worden in de basisregistratie gebouwen opgenomen bij verlening van de voor het realiseren van het pand benodigde toestemming of het opmaken van een in artikel 10, eerste lid, onderdeel b, van de wet genoemd proces-verbaal van constatering. De gegevens over panden blijven in de basisregistratie gebouwen aanwezig, ook indien het pand als zodanig niet meer aanwezig is. De basisregistratie gebouwen bevat in principe geen gegevens over panden die op 1 juli 2009 niet meer als zodanig aanwezig waren. 
+Toelichting
+Voor de interpretatie van de definitie van het objecttype PAND wordt verwezen naar het objectenhandboek basisregistratie gebouwen.
+
+### Standplaats
+
+Naam objecttype
+STANDPLAATS
+Code objecttype
+57
+Afkorting objecttype
+STA
+Definitie objecttype
+Een STANDPLAATS is een door het bevoegde gemeentelijke orgaan als zodanig aangewezen terrein of gedeelte daarvan dat bestemd is voor het permanent plaatsen van een niet direct en niet duurzaam met de aarde verbonden en voor woon -, bedrijfsmatige, of recreatieve doeleinden geschikte ruimte.
+Unieke aanduiding objecttype
+Standplaatsidentificatie
+Identificatie objecttype
+-
+Herkomst definitie objecttype
+Artikel 1 Wet basisregistraties adressen en gebouwen
+Datum opname objecttype
+Februari 2004
+Relatie met semantische kern
+Een STANDPLAATS is een DRIEDIMENöONAAL VIRTUEEL RUIMTELIJK OBJECT
+Overzicht attributen behorende bij objecttype
+Code
+Gegevensnaam
+57.01
+Standplaatsidentificatie
+57.02
+Indicatie geconstateerde standplaats
+57.03
+Standplaatsstatus
+57.10
+Aanduiding hoofdadres standplaats
+57.11
+Aanduiding nevenadressen standplaats
+57.20
+Standplaatsgeometrie
+57.91
+Datum begin geldigheid standplaatsgegevens
+57.92
+Datum einde geldigheid standplaatsgegevens
+57.93
+Aanduiding standplaatsgegevens in onderzoek
+57.97
+Documentdatum mutatie standplaats
+57.98
+Documentnummer mutatie standplaats
+
+Kwaliteitsbegrip objecttype
+Een STANDPLAATS bestaat op het moment dat er sprake is van een aanwijzing als standplaats door het bevoegde gemeentelijk orgaan. 
+Populatie objecttype
+De basisregistratie gebouwen omvat gegevens over alle standplaatsen op het Nederlands grondgebied, die daartoe officieel als zodanig zijn aangewezen. Nieuwe standplaatsen worden in de basisregistratie gebouwen opgenomen op basis van daartoe aangewezen brondocumenten, waarin het ontstaan van de standplaats als zodanig is vastgelegd. Daarnaast bevat de basisregistratie gebouwen alle geconstateerde standplaatsen in de zin van artikel 10, eerste lid, onderdeel b, van de wet. De gegevens over standplaatsen blijven in de basisregistratie gebouwen aanwezig, ook indien de standplaats als zodanig wordt ingetrokken. De basisregistratie gebouwen bevat in principe geen gegevens over standplaatsen die voor 1 juli 2009 zijn ingetrokken.
+Toelichting
+Voor de interpretatie van de definitie van het objecttype STANDPLAATS wordt verwezen naar het objectenhandboek basisregistratie gebouwen.
+
+### Verblijfsobject
+
+Naam objecttype
+VERBLIJFSOBJECT
+Code objecttype
+56
+Afkorting objecttype
+VBO
+Definitie objecttype
+Een VERBLIJFSOBJECT is de kleinste binnen één of meer panden gelegen en voor woon -, bedrijfsmatige, of recreatieve doeleinden geschikte eenheid van gebruik die ontsloten wordt via een eigen afsluitbare toegang vanaf de openbare weg, een erf of een gedeelde verkeersruimte, onderwerp kan zijn van goederenrechtelijke rechtshandelingen en in functioneel opzicht zelfstandig is.
+Unieke aanduiding objecttype
+Verblijfsobjectidentificatie
+Identificatie objecttype
+-
+Herkomst definitie objecttype
+Artikel 1 Wet basisregistraties adressen en gebouwen
+Datum opname objecttype
+Februari 2004
+Relatie met semantische kern
+Een VERBLIJFSOBJECT is een DRIEDIMENöONAAL VIRTUEEL RUIMTELIJK OBJECT
+Overzicht attributen behorende bij objecttype
+Code
+Gegevensnaam
+56.01
+Verblijfsobjectidentificatie
+56.02
+Indicatie geconstateerd verblijfsobject
+56.10
+Aanduiding hoofdadres verblijfsobject
+56.11
+Aanduiding nevenadressen verblijfsobject
+56.20
+Verblijfsobjectgeometrie
+56.30
+Gebruiksdoel verblijfsobject
+56.31
+Oppervlakte verblijfsobject
+56.32
+Verblijfsobjectstatus
+56.90
+Pandrelatering
+56.91
+Datum begin geldigheid verblijfsobjectgegevens
+56.92
+Datum einde geldigheid verblijfsobjectgegevens
+56.93
+Aanduiding verblijfsobjectgegevens in onderzoek
+56.97
+Documentdatum mutatie verblijfsobject
+56.98
+Documentnummer mutatie verblijfsobject
+
+Kwaliteitsbegrip objecttype
+-
+Populatie objecttype
+De basisregistratie gebouwen omvat gegevens over alle verblijfsobjecten op het Nederlands grondgebied die voldoen aan bovenstaande objectdefinitie. Gegevens over een nieuw verblijfsobject worden in de basisregistratie gebouwen opgenomen bij verlening van de voor het realiseren van het verblijfsobject benodigde toestemming of het opmaken van een in artikel 10, eerste lid, onderdeel b, van de wet genoemd proces-verbaal van constatering. De gegevens over verblijfsobjecten blijven in de basisregistratie gebouwen aanwezig, ook indien het verblijfsobject als zodanig niet meer aanwezig is. De basisregistratie gebouwen bevat in principe geen gegevens over verblijfsobjecten die op 1 juli 2009 niet meer als zodanig aanwezig waren.
+Toelichting
+Voor de interpretatie van de definitie van het objecttype VERBLIJFSOBJECT wordt verwezen naar het objectenhandboek basisregistratie gebouwen.
+
+# Beschrijving attribuutsoorten
+
+## Adressenregistratie
+
+### Nummeraanduiding
+
+DE IDENTIFICATIECODE VAN DE NUMMERAANDUIDING
+
+Naam attribuutsoort
+Identificatiecode nummeraanduiding
+Code attribuutsoort
+11.02
+XML-tag attribuutsoort
+identificatie
+Definitie attribuutsoort
+De unieke aanduiding van een NUMMERAANDUIDING.
+Herkomst definitie attribuutsoort
+Grondslagen Basis Registratie Adressen versie 2.0
+Datum opname attribuutsoort
+Oktober 2002
+Domein attribuutsoort
+Objectnummering (samengesteld)
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+1-1
+Indicatie authentiek
+Authentiek gegeven
+Regels attribuutsoort
+-
+Toelichting
+Elke nummeraanduiding waarvan gegevens zijn opgenomen in de basisregistratie adressen, wordt uniek aangeduid door middel van een identificatiecode. Deze identificatiecode bestaat uit de gemeentecode volgens GBA tabel 33 gevolgd door een codering voor de objecttypering en een voor de registrerende gemeente uniek volgnummer.
+
+HET HUISNUMMER
+
+Naam attribuutsoort
+Huisnummer
+Code attribuutsoort
+11.20
+XML-tag attribuutsoort
+huisnummer
+Definitie attribuutsoort
+Een door het bevoegde gemeentelijke orgaan ten aanzien van een adresseerbaar object toegekende nummering.
+Herkomst definitie attribuutsoort
+Grondslagen Basis Registratie Adressen versie 2.0
+Datum opname attribuutsoort
+Oktober 2002
+Domein attribuutsoort
+Huisnummering
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+1-1
+Indicatie authentiek
+Authentiek gegeven
+Regels attribuutsoort
+-
+Toelichting
+-
+
+AANDUIDING DAT OPNEMING IS GEBASEERD OP ARTIKEL 10, EERSTE LID, ONDERDEEL B, VAN DE WET
+
+Naam attribuutsoort
+Indicatie geconstateerde nummeraanduiding
+Code attribuutsoort
+11.21
+XML-tag attribuutsoort
+officieel
+Definitie attribuutsoort
+Een aanduiding waarmee kan worden aangegeven dat een object in de registratie is opgenomen als gevolg van een feitelijke constatering, zonder dat er op het moment van opname sprake was van een regulier brondocument voor deze opname.
+Herkomst definitie attribuutsoort
+Grondslagen Basis Registratie Adressen versie 4.0
+Datum opname attribuutsoort
+Februari 2006
+Domein attribuutsoort
+Indicatie
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+1-1
+Indicatie authentiek
+Niet-authentiek gegeven
+Regels attribuutsoort
+Aan dit gegeven wordt een waarde 'J' toegekend op het moment dat er sprake is van opname in de registratie op basis van een feitelijke constatering. Standaard kent dit gegeven een waarde 'N'.
+Toelichting
+Het feitelijk bestaan van een nummeraanduiding dient daadwerkelijk te worden geconstateerd. Het gaat dan bijvoorbeeld om door burgers aangebrachte nummeraanduidingen die binnen andere processen aan het licht zijn gekomen. 
+
+
+DE HUISLETTER
+
+Naam attribuutsoort
+Huisletter
+Code attribuutsoort
+11.30
+XML-tag attribuutsoort
+huisletter
+Definitie attribuutsoort
+Een door het bevoegde gemeentelijke orgaan ten aanzien van een adresseerbaar object toegekende toevoeging aan een huisnummer in de vorm van een alfanumeriek teken.
+Herkomst definitie attribuutsoort
+Grondslagen Basis Registratie Adressen versie 2.0
+Datum opname attribuutsoort
+Oktober 2002
+Domein attribuutsoort
+Huislettering
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+0-1
+Indicatie authentiek
+Authentiek gegeven
+Regels attribuutsoort
+-
+Toelichting
+-
+
+DE HUISNUMMERTOEVOEGING
+
+Naam attribuutsoort
+Huisnummertoevoeging
+Code attribuutsoort
+11.40
+XML-tag attribuutsoort
+huisnummertoevoeging
+Definitie attribuutsoort
+Een door het bevoegde gemeentelijke orgaan ten aanzien van een adresseerbaar object toegekende nadere toevoeging aan een huisnummer of een combinatie van huisnummer en huisletter.
+Herkomst definitie attribuutsoort
+Grondslagen Basis Registratie Adressen versie 2.0
+Datum opname attribuutsoort
+Oktober 2002
+Domein attribuutsoort
+Huisnummertoevoeging
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+0-1
+Indicatie authentiek
+Authentiek gegeven
+Regels attribuutsoort
+-
+Toelichting
+-
+
+DE POSTCODE
+
+Naam attribuutsoort
+Postcode
+Code attribuutsoort
+11.60
+XML-tag attribuutsoort
+postcode
+Definitie attribuutsoort
+De door TNT Post vastgestelde code behorende bij een bepaalde combinatie van een naam van een woonplaats, naam van een openbare ruimte en een huisnummer.
+Herkomst definitie attribuutsoort
+Ontleend aan Logisch Ontwerp GBA versie 3.0
+Datum opname attribuutsoort
+Augustus 2004
+Domein attribuutsoort
+Postcode
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+0-1
+Indicatie authentiek
+Niet-authentiek gegeven
+Regels attribuutsoort
+Dit gegeven wordt opgenomen voor alle adressen waaraan door TNT Post een postcode is toegekend.
+Toelichting
+Het gegeven is afkomstig van TNT Post.
+
+DE IDENTIFICATIECODE VAN DE WOONPLAATS
+
+Naam attribuutsoort
+Identificatiecode bijbehorende woonplaats
+Code attribuutsoort
+11.61
+XML-tag attribuutsoort
+GerelateerdeWoonplaats
+Definitie attribuutsoort
+Unieke aanduiding van de woonplaats waarbinnen het object waaraan de NUMMERAANDUIDING is toegekend is gelegen.
+Herkomst definitie attribuutsoort
+Grondslagen Basis Registratie Adressen versie 4.0
+Datum opname attribuutsoort
+Februari 2006
+Domein attribuutsoort
+Woonplaatscodering
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+0-1
+Indicatie authentiek
+Authentiek gegeven
+Regels attribuutsoort
+Dit gegeven dient te worden opgenomen op het moment dat een object is gelegen in een andere woonplaats dan de openbare ruimte waaraan de nummeraanduiding is gerelateerd.
+Toelichting
+Als dit gegeven is opgenomen dan wordt het adres van het object bepaald door de naam van de openbare ruimte, het huisnummer, een eventuele huisletter en huisnummertoevoeging en de woonplaats zoals die met dit gegeven wordt bepaald. De woonplaats behorende bij de nummeraanduiding prevaleert dus boven de woonplaats behorende bij de openbare ruimte. Achtergrond hiervan is dat de locatie van het object bepalend is voor de vraag in welke woonplaats een adres is gelegen.
+
+DE INGANGSDATUM VAN DE GELDIGHEID VAN EEN BEPAALDE COMBINATIE VAN GEGEVENS
+
+Naam attribuutsoort
+Datum begin geldigheid nummeraanduidinggegevens
+Code attribuutsoort
+11.62
+XML-tag attribuutsoort
+tijdvakgeldigheid\begindatumTijdvakGeldigheid
+Definitie attribuutsoort
+De begindatum van een periode waarin een of meer gegevens die worden bijgehouden over een NUMMERAANDUIDING een wijziging hebben ondergaan.
+Herkomst definitie attribuutsoort
+Grondslagen Basis Registratie Adressen versie 4.0
+Datum opname attribuutsoort
+Februari 2006
+Domein attribuutsoort
+DatumTijd
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+1-1
+Indicatie authentiek
+Niet-authentiek gegeven
+Regels attribuutsoort
+-
+Toelichting
+Dit gegeven wordt gebruikt om de datum aan te geven waarop een nieuwe combinatie van gegevens is of zal gaan gelden.
+
+DE EINDDATUM VAN DE GELDIGHEID VAN EEN BEPAALDE COMBINATIE VAN GEGEVENS
+
+Naam attribuutsoort
+Datum einde geldigheid nummeraanduidinggegevens
+Code attribuutsoort
+11.63
+XML-tag attribuutsoort
+tijdvakgeldigheid\einddatumTijdvakGeldigheid
+Definitie attribuutsoort
+De einddatum van een periode waarin er geen wijzigingen hebben plaatsgevonden in de gegevens die worden bijgehouden over een NUMMERAANDUIDING.
+Herkomst definitie attribuutsoort
+Grondslagen Basis Registratie Adressen versie 4.0
+Datum opname attribuutsoort
+Februari 2006
+Domein attribuutsoort
+DatumTijd
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+0-1
+Indicatie authentiek
+Niet-authentiek gegeven
+Regels attribuutsoort
+Dit gegeven dient in de registratie te worden opgenomen indien een of meer van de in de registratie opgenomen gegevens wijzigingen ondergaat. Alleen een datum die gelijk is aan of die gelegen is na de datum zoals opgenomen onder 'datum begin geldigheid nummeraanduidinggegevens' kan in de registratie worden opgenomen.
+Toelichting
+Dit gegeven wordt gebruikt om de datum aan te geven waarop de geldigheid van een bestaande combinatie van gegevens eindigt.
+
+DE AANTEKENING IN ONDERZOEK
+
+Naam attribuutsoort
+Aanduiding nummeraanduidinggegevens in onderzoek
+Code attribuutsoort
+11.64
+XML-tag attribuutsoort
+inOnderzoek
+Definitie attribuutsoort
+Een aanduiding waarmee wordt aangegeven dat een onderzoek wordt uitgevoerd naar de juistheid van een of meer gegevens van het betreffende object.
+Herkomst definitie attribuutsoort
+Grondslagen Basis Registratie Adressen versie 4.0
+Datum opname attribuutsoort
+Februari 2006
+Domein attribuutsoort
+Indicatie
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+1-1
+Indicatie authentiek
+Niet-authentiek gegeven
+Regels attribuutsoort
+Aan dit gegeven wordt een waarde 'J' toegekend op het moment dat een of meer gegevens van het object het onderwerp vormen van een onderzoek. Standaard kent dit gegeven een waarde 'N'.
+Toelichting
+-
+
+DE IDENTIFICATIECODE VAN DE OPENBARE RUIMTE
+
+Naam attribuutsoort
+Identificatiecode bijbehorende openbare ruimte
+Code attribuutsoort
+11.65
+XML-tag attribuutsoort
+GerelateerdeOpenbareRuimte
+Definitie attribuutsoort
+De unieke aanduiding van een OPENBARE RUIMTE waaraan een adresseerbaar object is gelegen.
+Herkomst definitie attribuutsoort
+Grondslagen Basis Registratie Adressen versie 2.0
+Datum opname attribuutsoort
+Oktober 2002
+Domein attribuutsoort
+Objectnummering (samengesteld)
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+1-1
+Indicatie authentiek
+Authentiek gegeven
+Regels attribuutsoort
+Het nummer is afkomstig uit de eveneens van de basisregistratie adressen onderdeel uitmakende tabel met gegevens over het objecttype OPENBARE RUIMTE. 
+Toelichting
+Het is niet wenselijk om nummeraanduidingen te relateren aan openbare ruimten van het type kunstwerk of administratief gebied.
+
+HET TYPE OBJECT WAARAAN EEN NUMMERAANDUIDING IS TOEGEKEND
+
+Naam attribuutsoort
+Type adresseerbaar object
+Code attribuutsoort
+11.66
+XML-tag attribuutsoort
+typeAdresseerbaarObject
+Definitie attribuutsoort
+De aard van het object waaraan een NUMMERAANDUIDING is toegekend.
+Herkomst definitie attribuutsoort
+Grondslagen Basis Registratie Adressen versie 2.0
+Datum opname attribuutsoort
+Oktober 2002
+Domein attribuutsoort
+Typering adresseerbare objecttypen
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+1-1
+Indicatie authentiek
+Authentiek gegeven
+Regels attribuutsoort
+-
+Toelichting
+-
+
+DE DAGTEKENING VAN HET BRONDOCUMENT
+
+Naam attribuutsoort
+Documentdatum mutatie nummeraanduiding
+Code attribuutsoort
+11.67
+XML-tag attribuutsoort
+bron\documentdatum
+Definitie attribuutsoort
+De datum waarop het brondocument is vastgesteld, op basis waarvan een opname of mutatie van gegevens ten aanzien van een NUMMERAANDUIDING heeft plaatsgevonden.
+Herkomst definitie attribuutsoort
+Grondslagen Basis Registratie Adressen versie 2.0
+Datum opname attribuutsoort
+Oktober 2002
+Domein attribuutsoort
+Datum
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+1-1
+Indicatie authentiek
+Niet-authentiek gegeven
+Regels attribuutsoort
+Alleen een datum die gelijk is aan of die is gelegen voor de datum van het opnemen of muteren van het betreffende gegeven kan in de registratie worden opgenomen.
+Toelichting
+In het geval het brondocument een besluit van een bestuursorgaan betreft, dan is de datum van het brondocument de datum waarop het besluit is genomen.
+
+HET INSCHRIJFNUMMER VAN HET BRONDOCUMENT
+
+Naam attribuutsoort
+Documentnummer mutatie nummeraanduiding
+Code attribuutsoort
+11.68
+XML-tag attribuutsoort
+bron\documentnummer
+Definitie attribuutsoort
+De unieke aanduiding van het brondocument op basis waarvan een opname of mutatie van gegevens ten aanzien van een NUMMERAANDUIDING heeft plaatsgevonden.
+Herkomst definitie attribuutsoort
+Grondslagen Basis Registratie Adressen versie 2.0
+Datum opname attribuutsoort
+Oktober 2002
+Domein attribuutsoort
+Documentnummering
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+1-1
+Indicatie authentiek
+Niet-authentiek gegeven
+Regels attribuutsoort
+-
+Toelichting
+-
+
+EEN AANDUIDING WAARUIT DE ACTUELE DAN WEL HISTORISCHE STATUS BLIJKT
+
+Naam attribuutsoort
+Nummeraanduidingstatus
+Code attribuutsoort
+11.69
+XML-tag attribuutsoort
+nummeraanduidingStatus
+Definitie attribuutsoort
+De fase van de levenscyclus van een NUMMERAANDUIDING, waarin de betreffende NUMMERAANDUIDING zich bevindt.
+Herkomst definitie attribuutsoort
+Grondslagen Basis Registratie Adressen versie 4.0
+Datum opname attribuutsoort
+Februari 2006
+Domein attribuutsoort
+Status naamgeving
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+1-1
+Indicatie authentiek
+Authentiek gegeven
+Regels attribuutsoort
+-
+Toelichting
+De basisregistratie adressen bevat gegevens over zowel bestaande nummeraanduidingen als ingetrokken nummeraanduidingen. Om het onderscheid tussen de stadia in de levenscyclus van de nummeraanduiding te kunnen maken, wordt gebruik gemaakt van dit statusgegeven.
+
+
+### Openbare ruimte
+
+DE IDENTIFICATIECODE VAN DE OPENBARE RUIMTE
+
+Naam attribuutsoort
+Identificatiecode openbare ruimte
+Code attribuutsoort
+11.01
+XML-tag attribuutsoort
+identificatie
+Definitie attribuutsoort
+De unieke aanduiding van een OPENBARE RUIMTE.
+Herkomst definitie attribuutsoort
+Grondslagen Basis Registratie Adressen versie 2.0
+Datum opname attribuutsoort
+Oktober 2002
+Domein attribuutsoort
+Objectnummering (samengesteld)
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+1-1
+Indicatie authentiek
+Authentiek gegeven
+Regels attribuutsoort
+-
+Toelichting
+Elke openbare ruimte waarvan gegevens zijn opgenomen in de basisregistratie adressen, wordt uniek aangeduid door middel van een identificatiecode. Deze identificatiecode bestaat uit de gemeentecode volgens GBA tabel 33 gevolgd door een codering voor de objecttypering en een voor de registrerende gemeente uniek volgnummer.
+
+DE NAAM VAN DE OPENBARE RUIMTE
+
+Naam attribuutsoort
+Naam openbare ruimte
+Code attribuutsoort
+11.10
+XML-tag attribuutsoort
+openbareRuimteNaam
+Definitie attribuutsoort
+Een door het bevoegde gemeentelijke orgaan aan een OPENBARE RUIMTE toegekende benaming.
+Herkomst definitie attribuutsoort
+Grondslagen Basis Registratie Adressen versie 2.0
+Datum opname attribuutsoort
+Oktober 2002
+Domein attribuutsoort
+Naamgeving object
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+1-1
+Indicatie authentiek
+Authentiek gegeven
+Regels attribuutsoort
+-
+Toelichting
+-
+
+AANDUIDING DAT OPNEMING IS GEBASEERD OP ARTIKEL 10, EERSTE LID, ONDERDEEL B, VAN DE WET
+
+Naam attribuutsoort
+Indicatie geconstateerde openbare ruimte
+Code attribuutsoort
+11.11
+XML-tag attribuutsoort
+officieel
+Definitie attribuutsoort
+Een aanduiding waarmee kan worden aangegeven dat een object in de registratie is opgenomen als gevolg van een feitelijke constatering, zonder dat er op het moment van opname sprake was van een regulier brondocument voor deze opname
+Herkomst definitie attribuutsoort
+Grondslagen Basis Registratie Adressen versie 4.0
+Datum opname attribuutsoort
+Februari 2006
+Domein attribuutsoort
+Indicatie
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+1-1
+Indicatie authentiek
+Niet-authentiek gegeven
+Regels attribuutsoort
+Aan dit gegeven wordt een waarde 'J' toegekend op het moment dat er sprake is van opname in de registratie op basis van een feitelijke constatering. Standaard kent dit gegeven een waarde 'N'.
+Toelichting
+Het feitelijk bestaan van een naam van een openbare ruimte dient daadwerkelijk te worden geconstateerd. Het gaat dan bijvoorbeeld om door burgers aangebrachte benamingen die binnen andere processen aan het licht zijn gekomen. 
+
+DE INGANGSDATUM VAN DE GELDIGHEID VAN EEN BEPAALDE COMBINATIE VAN GEGEVENS
+
+Naam attribuutsoort
+Datum begin geldigheid gegevens openbare ruimte
+Code attribuutsoort
+11.12
+XML-tag attribuutsoort
+tijdvakgeldigheid\begindatumTijdvakGeldigheid
+Definitie attribuutsoort
+De begindatum van een periode waarin een of meer gegevens die worden bijgehouden over een OPENBARE RUIMTE een wijziging hebben ondergaan.
+Herkomst definitie attribuutsoort
+Grondslagen Basis Registratie Adressen versie 4.0
+Datum opname attribuutsoort
+Februari 2006
+Domein attribuutsoort
+DatumTijd
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+1-1
+Indicatie authentiek
+Niet-authentiek gegeven
+Regels attribuutsoort
+-
+Toelichting
+Dit gegeven wordt gebruikt om de datum aan te geven waarop een nieuwe combinatie van gegevens is of zal gaan gelden.
+
+DE EINDDATUM VAN DE GELDIGHEID VAN EEN BEPAALDE COMBINATIE VAN GEGEVENS
+
+Naam attribuutsoort
+Datum einde geldigheid gegevens openbare ruimte
+Code attribuutsoort
+11.13
+XML-tag attribuutsoort
+tijdvakgeldigheid\einddatumTijdvakGeldigheid
+Definitie attribuutsoort
+De einddatum van een periode waarin er geen wijzigingen hebben plaatsgevonden in de gegevens die worden bijgehouden over een OPENBARE RUIMTE.
+Herkomst definitie attribuutsoort
+Grondslagen Basis Registratie Adressen versie 4.0
+Datum opname attribuutsoort
+Februari 2006
+Domein attribuutsoort
+DatumTijd
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+0-1
+Indicatie authentiek
+Niet-authentiek gegeven
+Regels attribuutsoort
+Dit gegeven dient in de registratie te worden opgenomen indien een of meer van de in de registratie opgenomen gegevens wijzigingen ondergaat. Alleen een datum die gelijk is aan of die gelegen is na de datum zoals opgenomen onder 'datum begin geldigheid gegevens openbare ruimte' kan in de registratie worden opgenomen.
+Toelichting
+Dit gegeven wordt gebruikt om de datum aan te geven waarop de geldigheid van een bestaande combinatie van gegevens eindigt.
+
+DE AANTEKENING IN ONDERZOEK
+
+Naam attribuutsoort
+Aanduiding gegevens openbare ruimte in onderzoek
+Code attribuutsoort
+11.14
+XML-tag attribuutsoort
+inOnderzoek
+Definitie attribuutsoort
+Een aanduiding waarmee wordt aangegeven dat een onderzoek wordt uitgevoerd naar de juistheid van een of meer gegevens van het betreffende object.
+Herkomst definitie attribuutsoort
+Grondslagen Basis Registratie Adressen versie 4.0
+Datum opname attribuutsoort
+Februari 2006
+Domein attribuutsoort
+Indicatie
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+1-1
+Indicatie authentiek
+Niet-authentiek gegeven
+Regels attribuutsoort
+Aan dit gegeven wordt een waarde 'J' toegekend op het moment dat een of meer gegevens van het object het onderwerp vormen van een onderzoek. Standaard kent dit gegeven een waarde 'N'.
+Toelichting
+-
+
+DE IDENTIFICATIECODE VAN DE WOONPLAATS
+
+Naam attribuutsoort
+Identificatiecode bijbehorende woonplaats
+Code attribuutsoort
+11.15
+XML-tag attribuutsoort
+GerelateerdeWoonplaats
+Definitie attribuutsoort
+Unieke aanduiding van de woonplaats waarbinnen een OPENBARE RUIMTE is gelegen.
+Herkomst definitie attribuutsoort
+Grondslagen Basis Registratie Adressen versie 2.0
+Datum opname attribuutsoort
+Oktober 2002
+Domein attribuutsoort
+Woonplaatscodering
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+1-1
+Indicatie authentiek
+Authentiek gegeven
+Regels attribuutsoort
+-
+Toelichting
+-
+
+HET TYPE OPENBARE RUIMTE WAARAAN DE BENAMING IS TOEGEKEND
+
+Naam attribuutsoort
+Type openbare ruimte
+Code attribuutsoort
+11.16
+XML-tag attribuutsoort
+openbareRuimteType
+Definitie attribuutsoort
+De aard van de als zodanig benoemde OPENBARE RUIMTE.
+Herkomst definitie attribuutsoort
+Grondslagen Basis Registratie Adressen versie 2.0
+Datum opname attribuutsoort
+Oktober 2002
+Domein attribuutsoort
+Typering openbare ruimte
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+1-1
+Indicatie authentiek
+Authentiek gegeven
+Regels attribuutsoort
+-
+Toelichting
+-
+
+DE DAGTEKENING VAN HET BRONDOCUMENT
+
+Naam attribuutsoort
+Documentdatum mutatie openbare ruimte
+Code attribuutsoort
+11.17
+XML-tag attribuutsoort
+bron\documentdatum
+Definitie attribuutsoort
+De datum waarop het brondocument is vastgesteld, op basis waarvan een opname of mutatie van gegevens ten aanzien van een OPENBARE RUIMTE heeft plaatsgevonden.
+Herkomst definitie attribuutsoort
+Grondslagen Basis Registratie Adressen versie 2.0
+Datum opname attribuutsoort
+Oktober 2002
+Domein attribuutsoort
+Datum
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+1-1
+Indicatie authentiek
+Niet-authentiek gegeven
+Regels attribuutsoort
+Alleen een datum die gelijk is aan of die is gelegen voor de datum van het opnemen of muteren van het betreffende gegeven kan in de registratie worden opgenomen.
+Toelichting
+In het geval het brondocument een besluit van een bestuursorgaan betreft, dan is de datum van het brondocument de datum waarop het besluit is genomen.
+
+HET INSCHRIJFNUMMER VAN HET BRONDOCUMENT
+
+Naam attribuutsoort
+Documentnummer mutatie openbare ruimte
+Code attribuutsoort
+11.18
+XML-tag attribuutsoort
+bron\documentnummer
+Definitie attribuutsoort
+De unieke aanduiding van het brondocument op basis waarvan een opname of mutatie van gegevens ten aanzien van een OPENBARE RUIMTE heeft plaatsgevonden.
+Herkomst definitie attribuutsoort
+Grondslagen Basis Registratie Adressen versie 2.0
+Datum opname attribuutsoort
+Oktober 2002
+Domein attribuutsoort
+Documentnummering
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+1-1
+Indicatie authentiek
+Niet-authentiek gegeven
+Regels attribuutsoort
+-
+Toelichting
+-
+
+
+DE AANDUIDING WAARUIT DE ACTUELE DAN WEL HISTORISCHE STATUS BLIJKT
+
+Naam attribuutsoort
+Status openbare ruimte
+Code attribuutsoort
+11.19
+XML-tag attribuutsoort
+openbareruimteStatus
+Definitie attribuutsoort
+De fase van de levenscyclus van een OPENBARE RUIMTE, waarin de betreffende OPENBARE RUIMTE zich bevindt.
+Herkomst definitie attribuutsoort
+Grondslagen Basis Registratie Adressen versie 4.0
+Datum opname attribuutsoort
+Februari 2006
+Domein attribuutsoort
+Status naamgeving
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+1-1
+Indicatie authentiek
+Authentiek gegeven
+Regels attribuutsoort
+-
+Toelichting
+De basisregistratie adressen bevat gegevens over zowel bestaande openbare ruimten als ingetrokken openbare ruimten. Om het onderscheid tussen de stadia in de levenscyclus van de openbare ruimte te kunnen maken, wordt gebruik gemaakt van dit statusgegeven.
+
+
+### Woonplaats
+
+DE IDENTIFICATIECODE VAN DE WOONPLAATS
+
+Naam attribuutsoort
+Woonplaatsidentificatie
+Code attribuutsoort
+11.03
+XML-tag attribuutsoort
+identificatie
+Definitie attribuutsoort
+De unieke aanduiding van een WOONPLAATS, zoals opgenomen in de landelijke woonplaatsentabel.
+Herkomst definitie attribuutsoort
+Grondslagen Basis Registratie Adressen versie 3.0
+Datum opname attribuutsoort
+Augustus 2004
+Domein attribuutsoort
+Woonplaatscodering
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+1-1
+Indicatie authentiek
+Authentiek gegeven
+Regels attribuutsoort
+-
+Toelichting
+De woonplaatsen worden vastgesteld door de gemeenten. De vastgestelde woonplaatsen worden voorzien van een unieke aanduiding, te vergelijken met de gemeentecode volgens GBA tabel 33. Deze aanduiding wordt verstrekt door de Dienst.
+
+DE NAAM VAN DE WOONPLAATS
+
+Naam attribuutsoort
+Woonplaatsnaam
+Code attribuutsoort
+11.70
+XML-tag attribuutsoort
+woonplaatsNaam
+Definitie attribuutsoort
+De door het bevoegde gemeentelijke orgaan aan een WOONPLAATS toegekende benaming.
+Herkomst definitie attribuutsoort
+Grondslagen Basis Registratie Adressen versie 3.0
+Datum opname attribuutsoort
+Augustus 2004
+Domein attribuutsoort
+Naamgeving object
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+1-1
+Indicatie authentiek
+Authentiek gegeven
+Regels attribuutsoort
+-
+Toelichting
+-
+
+
+DE GEOMETRIE VAN DE WOONPLAATS
+
+Naam attribuutsoort
+Woonplaatsgeometrie
+Code attribuutsoort
+11.71
+XML-tag attribuutsoort
+woonplaatsGeometrie
+Definitie attribuutsoort
+De tweedimensionale geometrische representatie van het vlak dat wordt gevormd door de omtrekken van een woonplaats.
+Herkomst definitie attribuutsoort
+Grondslagen Basis Registratie Adressen versie 4.0
+Datum opname attribuutsoort
+Februari 2006
+Domein attribuutsoort
+Ruimtelijke coördinaten
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+1-1
+Indicatie authentiek
+Authentiek gegeven
+Regels attribuutsoort
+Het object wordt gerepresenteerd door een vlak van het GML geometry type GM_Surface. Bij woonplaatsgeometrie is het niet mogelijk om gebruik te maken van de derde dimensie (de z-coördinaat).
+Toelichting
+Met deze geometrische component wordt de ruimtelijke positionering van een woonplaats vastgelegd. Een dergelijke ruimtelijke positionering staat in het dagelijks taalgebruik gelijk aan 'een kaartje van de begrenzing van de woonplaats'. Bij het vastleggen van de geometrische component gaat het echter niet om de verschijningsvorm van de presentatie (de kaart) maar om de gegevens die aan deze verschijningsvorm ten grondslag liggen. Deze gegevens bestaan uit een reeks van coördinaten in het RD stelsel die gezamenlijk de omtrek van de woonplaats beschrijven. De woonplaatsgeometrie wordt ingetekend op basis van de Grootschalige Basiskaart (lokaal of Nederland).
+
+AANDUIDING DAT OPNEMING IS GEBASEERD OP ARTIKEL 10, EERSTE LID, ONDERDEEL B, VAN DE WET
+
+Naam attribuutsoort
+Indicatie geconstateerde woonplaats
+Code attribuutsoort
+11.72
+XML-tag attribuutsoort
+officieel
+Definitie attribuutsoort
+Een aanduiding waarmee kan worden aangegeven dat een object in de registratie is opgenomen als gevolg van een feitelijke constatering, zonder dat er op het moment van opname sprake was van een regulier brondocument voor deze opname.
+Herkomst definitie attribuutsoort
+Grondslagen Basis Registratie Adressen versie 4.0
+Datum opname attribuutsoort
+Februari 2006
+Domein attribuutsoort
+Indicatie
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+1-1
+Indicatie authentiek
+Niet-authentiek gegeven
+Regels attribuutsoort
+Aan dit gegeven wordt een waarde 'J' toegekend op het moment dat er sprake is van opname in de registratie op basis van een feitelijke constatering. Standaard kent dit gegeven een waarde 'N'.
+Toelichting
+Het feitelijk bestaan van een woonplaats dient daadwerkelijk te worden geconstateerd. Het gaat dan bijvoorbeeld om door burgers aangebrachte woonplaatsbenamingen die binnen andere processen aan het licht zijn gekomen. 
+
+DE INGANGSDATUM VAN DE GELDIGHEID VAN EEN BEPAALDE COMBINATIE VAN GEGEVENS
+
+Naam attribuutsoort
+Datum begin geldigheid woonplaatsgegevens
+Code attribuutsoort
+11.73
+XML-tag attribuutsoort
+tijdvakgeldigheid\begindatumTijdvakGeldigheid
+Definitie attribuutsoort
+De begindatum van een periode waarin een of meer gegevens die worden bijgehouden over een WOONPLAATS een wijziging hebben ondergaan.
+Herkomst definitie attribuutsoort
+Grondslagen Basis Registratie Adressen versie 4.0
+Datum opname attribuutsoort
+Februari 2006
+Domein attribuutsoort
+DatumTijd
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+1-1
+Indicatie authentiek
+Niet-authentiek gegeven
+Regels attribuutsoort
+-
+Toelichting
+Dit gegeven wordt gebruikt om de datum aan te geven waarop een nieuwe combinatie van gegevens is of zal gaan gelden.
+
+DE EINDDATUM VAN DE GELDIGHEID VAN EEN BEPAALDE COMBINATIE VAN GEGEVENS
+
+Naam attribuutsoort
+Datum einde geldigheid woonplaatsgegevens
+Code attribuutsoort
+11.74
+XML-tag attribuutsoort
+tijdvakgeldigheid\einddatumTijdvakGeldigheid
+Definitie attribuutsoort
+De einddatum van een periode waarin er geen wijzigingen hebben plaatsgevonden in de gegevens die worden bijgehouden over een WOONPLAATS.
+Herkomst definitie attribuutsoort
+Grondslagen Basis Registratie Adressen versie 4.0
+Datum opname attribuutsoort
+Februari 2006
+Domein attribuutsoort
+DatumTijd
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+0-1
+Indicatie authentiek
+Niet-authentiek gegeven
+Regels attribuutsoort
+Dit gegeven dient in de registratie te worden opgenomen indien een of meer van de in de registratie opgenomen gegevens wijzigingen ondergaat. Alleen een datum die gelijk is aan of die gelegen is na de datum zoals opgenomen onder 'datum begin geldigheid woonplaatsgegevensÕ kan in de registratie worden opgenomen.
+Toelichting
+Dit gegeven wordt gebruikt om de datum aan te geven waarop de geldigheid van een bestaande combinatie van gegevens eindigt.
+
+DE AANTEKENING IN ONDERZOEK
+
+Naam attribuutsoort
+Aanduiding woonplaatsgegevens in onderzoek
+Code attribuutsoort
+11.75
+XML-tag attribuutsoort
+inOnderzoek
+Definitie attribuutsoort
+Een aanduiding waarmee wordt aangegeven dat een onderzoek wordt uitgevoerd naar de juistheid van een of meer gegevens van het betreffende object.
+Herkomst definitie attribuutsoort
+Grondslagen Basis Registratie Adressen versie 4.0
+Datum opname attribuutsoort
+Februari 2006
+Domein attribuutsoort
+Indicatie
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+1-1
+Indicatie authentiek
+Niet-authentiek gegeven
+Regels attribuutsoort
+Aan dit gegeven wordt een waarde 'J' toegekend op het moment dat een of meer gegevens van het object het onderwerp vormen van een onderzoek. Standaard kent dit gegeven een waarde 'N'.
+Toelichting
+-
+
+DE DAGTEKENING VAN HET BRONDOCUMENT
+
+Naam attribuutsoort
+Documentdatum mutatie woonplaats
+Code attribuutsoort
+11.77
+XML-tag attribuutsoort
+bron\documentdatum
+Definitie attribuutsoort
+De datum waarop het brondocument is vastgesteld, op basis waarvan een opname of mutatie van gegevens ten aanzien van een WOONPLAATS heeft plaatsgevonden.
+Herkomst definitie attribuutsoort
+Grondslagen Basis Registratie Adressen versie 3.0
+Datum opname attribuutsoort
+Augustus 2004
+Domein attribuutsoort
+Datum
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+1-1
+Indicatie authentiek
+Niet-authentiek gegeven
+Regels attribuutsoort
+Alleen een datum die gelijk is aan of die is gelegen voor de datum van het opnemen of muteren van het betreffende gegeven kan in de registratie worden opgenomen.
+Toelichting
+In het geval het brondocument een besluit van een bestuursorgaan betreft, dan is de datum van het brondocument de datum waarop het besluit is genomen
+
+HET INSCHRIJFNUMMER VAN HET BRONDOCUMENT
+
+Naam attribuutsoort
+Documentnummer mutatie woonplaats
+Code attribuutsoort
+11.78
+XML-tag attribuutsoort
+bron\documentnummer
+Definitie attribuutsoort
+De unieke aanduiding van het brondocument op basis waarvan een opname of mutatie van gegevens ten aanzien van een WOONPLAATS heeft plaatsgevonden.
+Herkomst definitie attribuutsoort
+Grondslagen Basis Registratie Adressen versie 3.0
+Datum opname attribuutsoort
+Augustus 2004
+Domein attribuutsoort
+Documentnummering
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+1-1
+Indicatie authentiek
+Niet-authentiek gegeven
+Regels attribuutsoort
+-
+Toelichting
+-
+
+DE AANDUIDING WAARUIT DE ACTUELE DAN WEL HISTORISCHE STATUS BLIJKT
+
+Naam attribuutsoort
+Woonplaatsstatus
+Code attribuutsoort
+11.79
+XML-tag attribuutsoort
+woonplaatsStatus
+Definitie attribuutsoort
+De fase van de levenscyclus van een WOONPLAATS, waarin de betreffende WOONPLAATS zich bevindt.
+Herkomst definitie attribuutsoort
+Grondslagen Basis Registratie Adressen versie 4.0
+Datum opname attribuutsoort
+Februari 2006
+Domein attribuutsoort
+Status woonplaats
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+1-1
+Indicatie authentiek
+Authentiek gegeven
+Regels attribuutsoort
+-
+Toelichting
+De basisregistratie adressen bevat gegevens over zowel bestaande woonplaatsen als opgeheven woonplaatsen. Om het onderscheid tussen de stadia in de levenscyclus van de woonplaats te kunnen maken, wordt gebruik gemaakt van dit statusgegeven.
+
+
+## Gebouwenregistratie
+
+### Ligplaats
+
+DE IDENTIFICATIECODE VAN DE LIGPLAATS
+
+Naam attribuutsoort
+Ligplaatsidentificatie
+Code attribuutsoort
+58.01
+XML-tag attribuutsoort
+identificatie
+Definitie attribuutsoort
+De unieke aanduiding van een LIGPLAATS.
+Herkomst definitie attribuutsoort
+Grondslagen Basis Gebouwen Registratie versie 2.3
+Datum opname attribuutsoort
+Februari 2004
+Domein attribuutsoort
+Objectnummering (samengesteld)
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+1-1
+Indicatie authentiek
+Authentiek gegeven
+Regels attribuutsoort
+-
+Toelichting
+Elke ligplaats waarvan gegevens zijn opgenomen in de basisregistratie gebouwen wordt uniek aangeduid door middel van een identificatiecode. Deze identificatiecode bestaat uit de gemeentecode volgens GBA tabel 33 gevolgd door een codering voor de objecttypering en een voor de registrerende gemeente uniek volgnummer.
+
+AANDUIDING DAT OPNEMING IS GEBASEERD OP ARTIKEL 10, EERSTE LID, ONDERDEEL B, VAN DE WET
+
+Naam attribuutsoort
+Indicatie geconstateerde ligplaats
+Code attribuutsoort
+58.02
+XML-tag attribuutsoort
+officieel
+Definitie attribuutsoort
+Een aanduiding waarmee kan worden aangegeven dat een object in de registratie is opgenomen als gevolg van een feitelijke constatering, zonder dat er op het moment van opname sprake was van een regulier brondocument voor deze opname.
+Herkomst definitie attribuutsoort
+Grondslagen Basis Gebouwen Registratie versie 4.0
+Datum opname attribuutsoort
+Februari 2006
+Domein attribuutsoort
+Indicatie
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+1-1
+Indicatie authentiek
+Niet-authentiek gegeven
+Regels attribuutsoort
+Aan dit gegeven wordt een waarde 'J' toegekend op het moment dat er sprake is van opname in de registratie op basis van een feitelijke constatering. Standaard kent dit gegeven een waarde 'N'.
+Toelichting
+Het feitelijk bestaan van een ligplaats dient daadwerkelijk te worden geconstateerd. Het gaat dan bijvoorbeeld om het feitelijk permanent gebruik van een plaats in het water dat binnen andere processen aan het licht is gekomen.
+
+DE AANDUIDING WAARUIT DE ACTUELE DAN WEL HISTORISCHE STATUS BLIJKT
+
+Naam attribuutsoort
+Ligplaatsstatus
+Code attribuutsoort
+58.03
+XML-tag attribuutsoort
+ligplaatsStatus
+Definitie attribuutsoort
+De fase van de levenscyclus van een LIGPLAATS, waarin de betreffende LIGPLAATS zich bevindt.
+Herkomst definitie attribuutsoort
+Grondslagen Basis Gebouwen Registratie versie 4.0
+Datum opname attribuutsoort
+Februari 2006
+Domein attribuutsoort
+Status ligplaats en standplaats
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+1-1
+Indicatie authentiek
+Authentiek gegeven
+Regels attribuutsoort
+-
+Toelichting
+De basisregistratie gebouwen bevat gegevens over zowel daadwerkelijk aanwezige ligplaatsen als ingetrokken ligplaatsen. Om het onderscheid tussen de stadia in de levenscyclus van de ligplaats te kunnen maken, wordt gebruik gemaakt van dit statusgegeven.
+
+DE IDENTIFICATIECODE VAN DE AAN DE LIGPLAATS TOEGEKENDE HOOFDADRES
+
+Naam attribuutsoort
+Aanduiding hoofdadres ligplaats
+Code attribuutsoort
+58.10
+XML-tag attribuutsoort
+GerelateerdeAdressen\hoofdAdres
+Definitie attribuutsoort
+De identificatiecode nummeraanduiding waaronder het hoofdadres van een LIGPLAATS, dat in het kader van de basisregistratie gebouwen als zodanig is aangemerkt, is opgenomen in de basisregistratie adressen.
+Herkomst definitie attribuutsoort
+Grondslagen Basis Gebouwen Registratie versie 2.3
+Datum opname attribuutsoort
+Februari 2004
+Domein attribuutsoort
+Objectnummering (samengesteld)
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+1-1
+Indicatie authentiek
+Authentiek gegeven
+Regels attribuutsoort
+-
+Toelichting
+Met behulp van dit gegeven wordt aangegeven welk adres wordt aangemerkt als het hoofdadres van de ligplaats (zie ook het gegeven aanduiding nevenadressen). Het gegeven omvat niet de opname van de adresgegevens zelf. In de basisregistratie gebouwen wordt slechts de aanduiding (identificatiecode nummeraanduiding) opgenomen waaronder het betreffende adres in de basisregistratie adressen bekend is. Met deze aanduiding kunnen de feitelijke adresgegevens worden opgehaald uit de basisregistratie adressen. Voor de gebruikers van de registratie kan met behulp van technische oplossingen binnen de te gebruiken applicaties het feitelijke adres worden gepresenteerd in plaats van de genoemde identificatiecode nummeraanduiding.
+
+DE IDENTIFICATIECODES VAN DE AAN DE LIGPLAATS TOEGEKENDE NEVENADRESSEN
+
+Naam attribuutsoort
+Aanduiding nevenadressen ligplaats
+
+Code attribuutsoort
+58.11
+
+XML-tag attribuutsoort
+GerelateerdeAdressen\nevenAdres
+
+Definitie attribuutsoort
+De identificatiecodes nummeraanduiding waaronder nevenadressen van een LIGPLAATS, die in het kader van de basisregistratie gebouwen als zodanig zijn aangemerkt, zijn opgenomen in de basisregistratie adressen.
+
+Herkomst definitie attribuutsoort
+Grondslagen Basis Gebouwen Registratie versie 2.3
+Datum opname attribuutsoort
+Februari 2004
+Domein attribuutsoort
+Objectnummering (samengesteld)
+
+Indicatie materiële historie
+J
+
+Indicatie formele historie
+J
+
+Indicatie kardinaliteit
+0-N
+
+Indicatie authentiek
+Authentiek gegeven
+
+Regels attribuutsoort
+-
+
+Toelichting
+Aan een ligplaats kunnen een of meer nevenadressen zijn toegekend.
+
+
+DE GEOMETRIE VAN DE LIGPLAATS
+
+Naam attribuutsoort
+Ligplaatsgeometrie
+Code attribuutsoort
+58.20
+XML-tag attribuutsoort
+ligplaatsGeometrie
+Definitie attribuutsoort
+De tweedimensionale geometrische representatie van de omtrekken van een LIGPLAATS.
+Herkomst definitie attribuutsoort
+Grondslagen Basis Gebouwen Registratie versie 2.3
+Datum opname attribuutsoort
+Februari 2004
+Domein attribuutsoort
+Ruimtelijke coördinaten
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+1-1
+Indicatie authentiek
+Authentiek gegeven
+Regels attribuutsoort
+Het object wordt gerepresenteerd door een vlak van het GML geometry type GM_Surface.
+Toelichting
+Met deze geometrische component wordt de ruimtelijke positionering van een ligplaats vastgelegd. Een dergelijke ruimtelijke positionering staat in het dagelijks taalgebruik gelijk aan 'een kaartje van de ligplaats'. Bij het vastleggen van de geometrische component gaat het echter niet om de verschijningsvorm van de presentatie (de kaart) maar om de gegevens die aan deze verschijningsvorm ten grondslag liggen. Deze gegevens bestaan uit een reeks van coördinaten in het RD stelsel die gezamenlijk de omtrek van de ligplaats beschrijven. Hiertoe wordt gebruik gemaakt van de Grootschalige Basiskaart (lokaal of Nederland).
+
+DE INGANGSDATUM VAN DE GELDIGHEID VAN EEN BEPAALDE COMBINATIE VAN GEGEVENS
+
+Naam attribuutsoort
+Datum begin geldigheid ligplaatsgegevens
+Code attribuutsoort
+58.91
+XML-tag attribuutsoort
+tijdvakgeldigheid\begindatumTijdvakGeldigheid
+Definitie attribuutsoort
+De begindatum van een periode waarin een of meer gegevens die worden bijgehouden over een LIGPLAATS een wijziging hebben ondergaan.
+Herkomst definitie attribuutsoort
+Grondslagen Basis Gebouwen Registratie versie 4.0
+Datum opname attribuutsoort
+Februari 2006
+Domein attribuutsoort
+DatumTijd
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+1-1
+Indicatie authentiek
+Niet-authentiek gegeven
+Regels attribuutsoort
+-
+Toelichting
+Dit gegeven wordt gebruikt om de datum aan te geven waarop een nieuwe combinatie van gegevens is of zal gaan gelden.
+
+DE EINDDATUM VAN DE GELDIGHEID VAN EEN BEPAALDE COMBINATIE VAN GEGEVENS
+
+Naam attribuutsoort
+Datum einde geldigheid ligplaatsgegevens
+Code attribuutsoort
+58.92
+XML-tag attribuutsoort
+tijdvakgeldigheid\einddatumTijdvakGeldigheid
+Definitie attribuutsoort
+De einddatum van een periode waarin er geen wijzigingen hebben plaatsgevonden in de gegevens die worden bijgehouden over een LIGPLAATS.
+Herkomst definitie attribuutsoort
+Grondslagen Basis Gebouwen Registratie versie 4.0
+Datum opname attribuutsoort
+Februari 2006
+Domein attribuutsoort
+DatumTijd
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+0-1
+Indicatie authentiek
+Niet-authentiek gegeven
+Regels attribuutsoort
+Dit gegeven dient in de registratie te worden opgenomen indien een of meer van de in de registratie opgenomen gegevens wijzigingen ondergaat. Alleen een datum die gelijk is aan of die gelegen is na de datum zoals opgenomen onder 'datum begin geldigheid ligplaatsgegevens'  kan in de registratie worden opgenomen.
+Toelichting
+Dit gegeven wordt gebruikt om de datum aan te geven waarop de geldigheid van een bestaande combinatie van gegevens eindigt.
+
+DE AANTEKENING IN ONDERZOEK
+
+Naam attribuutsoort
+Aanduiding ligplaatsgegevens in onderzoek
+Code attribuutsoort
+58.93
+XML-tag attribuutsoort
+inOnderzoek
+Definitie attribuutsoort
+Een aanduiding waarmee wordt aangegeven dat een onderzoek wordt uitgevoerd naar de juistheid van een of meer gegevens van het betreffende object.
+Herkomst definitie attribuutsoort
+Grondslagen Basis Gebouwen Registratie versie 4.0
+Datum opname attribuutsoort
+Februari 2006
+Domein attribuutsoort
+Indicatie
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+1-1
+Indicatie authentiek
+Niet-authentiek gegeven
+Regels attribuutsoort
+Aan dit gegeven wordt een waarde 'J' toegekend op het moment dat een of meer gegevens van het object het onderwerp vormen van een onderzoek. Standaard kent dit gegeven een waarde 'N'.
+Toelichting
+-
+
+DE DAGTEKENING VAN HET BRONDOCUMENT
+
+Naam attribuutsoort
+Documentdatum mutatie ligplaats
+Code attribuutsoort
+58.97
+XML-tag attribuutsoort
+bron\documentdatum
+Definitie attribuutsoort
+De datum waarop het brondocument is vastgesteld, op basis waarvan een opname of mutatie van gegevens ten aanzien van een LIGPLAATS heeft plaatsgevonden.
+Herkomst definitie attribuutsoort
+Grondslagen Basis Gebouwen Registratie versie 2.3
+Datum opname attribuutsoort
+Februari 2004
+Domein attribuutsoort
+Datum
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+1-1
+Indicatie authentiek
+Niet-authentiek gegeven
+Regels attribuutsoort
+Alleen een datum die gelijk is aan of die is gelegen voor de datum van het opnemen of muteren van het betreffende gegeven kan in de registratie worden opgenomen.
+Toelichting
+In het geval het brondocument een besluit van een bestuursorgaan betreft, dan is de datum van het brondocument de datum waarop het besluit is genomen.
+
+HET INSCHRIJFNUMMER VAN HET BRONDOCUMENT
+
+Naam attribuutsoort
+Documentnummer mutatie ligplaats
+Code attribuutsoort
+58.98
+XML-tag attribuutsoort
+bron\documentnummer
+Definitie attribuutsoort
+De unieke aanduiding van het brondocument op basis waarvan een opname of mutatie van gegevens ten aanzien van een LIGPLAATS heeft plaatsgevonden.
+Herkomst definitie attribuutsoort
+Grondslagen Basis Gebouwen Registratie versie 2.3
+Datum opname attribuutsoort
+Februari 2004
+Domein attribuutsoort
+Documentnummering
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+1-1
+Indicatie authentiek
+Niet-authentiek gegeven
+Regels attribuutsoort
+-
+Toelichting
+-
+
+
+
+### Pand
+
+DE IDENTIFICATIECODE VAN HET PAND
+
+Naam attribuutsoort
+Pandidentificatie
+Code attribuutsoort
+55.01
+XML-tag attribuutsoort
+identificatie
+Definitie attribuutsoort
+De unieke aanduiding van een PAND.
+Herkomst definitie attribuutsoort
+Grondslagen Basis Gebouwen Registratie versie 2.3
+Datum opname attribuutsoort
+Februari 2004
+Domein attribuutsoort
+Objectnummering (samengesteld)
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+1-1
+Indicatie authentiek
+Authentiek gegeven
+Regels attribuutsoort
+-
+Toelichting
+Elk pand waarvan gegevens zijn opgenomen in de basisregistratie gebouwen wordt uniek aangeduid door middel van een identificatiecode. Deze identificatiecode bestaat uit de viercijferige gemeentecode volgens GBA tabel 33, gevolgd door een codering voor de objecttypering en een voor de registrerende gemeente uniek volgnummer.
+
+AANDUIDING DAT OPNEMING IS GEBASEERD OP ARTIKEL 10, EERSTE LID, ONDERDEEL B, VAN DE WET
+
+Naam attribuutsoort
+Indicatie geconstateerd pand
+Code attribuutsoort
+55.02
+XML-tag attribuutsoort
+officieel
+Definitie attribuutsoort
+Een aanduiding waarmee kan worden aangegeven dat een object in de registratie is opgenomen als gevolg van een feitelijke constatering, zonder dat er op het moment van opname sprake was van een regulier brondocument voor deze opname
+Herkomst definitie attribuutsoort
+Grondslagen Basis Gebouwen Registratie versie 4.0
+Datum opname attribuutsoort
+Februari 2006
+Domein attribuutsoort
+Indicatie
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+1-1
+Indicatie authentiek
+Niet-authentiek gegeven
+Regels attribuutsoort
+Aan dit gegeven wordt een waarde 'J' toegekend op het moment dat er sprake is van opname in de registratie op basis van een feitelijke constatering. Standaard kent dit gegeven een waarde 'N'.
+Toelichting
+Het feitelijk bestaan van een pand dient daadwerkelijk te worden geconstateerd. Het gaat dan bijvoorbeeld om niet eerder in de registratie opgenomen panden, vanwege het ontbreken van de voor de bouw benodigde vergunning of vanwege het niet benodigd zijn van een dergelijke vergunning. 
+
+DE GEOMETRIE VAN HET PAND
+
+Naam attribuutsoort
+Pandgeometrie
+Code attribuutsoort
+55.20
+XML-tag attribuutsoort
+pandGeometrie
+Definitie attribuutsoort
+De minimaal tweedimensionale geometrische representatie van het bovenaanzicht van de omtrekken van een PAND.
+Herkomst definitie attribuutsoort
+Grondslagen Basis Gebouwen Registratie versie 2.3
+Datum opname attribuutsoort
+Februari 2004
+Domein attribuutsoort
+Ruimtelijke coördinaten
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+1-1
+Indicatie authentiek
+Authentiek gegeven
+Regels attribuutsoort
+Het object wordt gerepresenteerd door een vlak van het GML geometry type GM_Surface.
+Ten aanzien van de nauwkeurigheid en detaillering van niet - ingemeten pandgeometrie (in de periode tussen opname in de registratie en maximaal 6 maanden na bouw gereed) geldt:
+* de relatieve puntprecisie bedraagt 140 cm in bebouwd gebied en 280 cm in landelijk gebied (hetgeen overeen komt met een absolute puntprecisie van respectievelijk 100 cm en 200 cm);
+* details die meer dan 100 cm afwijken van de doorgaande gevellijn moeten worden opgenomen;
+* de niet - ingemeten pandgeometrie (voorlopige pandgeometrie) dient op de juiste wijze gepositioneerd te zijn ten opzichte van de GBKN of kadastrale kaart.
+Ten aanzien van de nauwkeurigheid en detaillering van ingemeten pandgeometrie geldt:
+* de relatieve puntprecisie bedraagt 28 cm in bebouwd gebied en 56 cm in landelijk gebied (afgeleid van een absolute puntprecisie van respectievelijk 20 cm en 40 cm);
+* details die minder dan 25 cm afwijken van de doorgaande gevellijn worden niet opgenomen;
+* de opgaande gevellijnen worden ingemeten; 
+* in het geval er sprake is van overbouw wordt de gevellijn van de overbouw ingemeten;
+* daar waar het pand samenvalt met een gebouw uit de GBKN, moeten de puntcoördinaten en de ligging exact overeenkomen met die gegevens uit de GBKN.
+Bij de opbouw van de basisregistratie gebouwen is de geometrie van in de grootschalige basiskaart ontbrekende panden opgenomen met een relatieve puntprecisie van 0,6 m in bebouwd gebied en 1,2 m in landelijk gebied.
+Toelichting
+Met deze geometrische component wordt de ruimtelijke positionering van een pand vastgelegd. Een dergelijke ruimtelijke positionering staat in het dagelijks taalgebruik gelijk aan 'een kaartje van het pand'. Bij het vastleggen van de geometrische component gaat het echter niet om de verschijningsvorm van de presentatie (de kaart) maar om de gegevens die aan deze verschijningsvorm ten grondslag liggen. Deze gegevens bestaan uit een reeks van coördinaten in het RD stelsel die gezamenlijk de omtrek van het pand beschrijven. Hiertoe wordt gebruik gemaakt van de Grootschalige Basiskaart (lokaal of Nederland). De geometrie zal aanvankelijk schetsmatig (ingepast) van karakter zijn en later worden ingemeten.
+Deze schetsmatige pandgeometrie dient op de juiste wijze gepositioneerd te zijn ten opzichte van het product Grootschalige Basiskaart of kadastrale kaart (zodat bijvoorbeeld een pand dat op de bouwtekening ten oosten van een sloot is afgebeeld ook in de digitale kaart ten oosten van die sloot uit de Grootschalige Basiskaart moet worden afgebeeld).
+
+HET BOUWJAAR VAN HET PAND
+
+Naam attribuutsoort
+Oorspronkelijk bouwjaar pand
+Code attribuutsoort
+55.30
+XML-tag attribuutsoort
+bouwjaar
+Definitie attribuutsoort
+De aanduiding van het jaar waarin een PAND oorspronkelijk als bouwkundig gereed is of wordt opgeleverd.
+Herkomst definitie attribuutsoort
+Grondslagen Basis Gebouwen Registratie versie 2.3
+Datum opname attribuutsoort
+Februari 2004
+Domein attribuutsoort
+Jaar
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+1-1
+Indicatie authentiek
+Authentiek gegeven
+Regels attribuutsoort
+Bij het initieel opvoeren van een PAND wordt door de gemeente een reële inschatting gemaakt van het waarschijnlijke bouwjaar van het PAND. Bij het bouwkundig gereed opleveren van het PAND wordt deze waarde in voorkomende gevallen aangepast. Indien in latere jaren wijzigingen aan een pand worden aangebracht, leidt dit niet tot wijziging van het bouwjaar.
+Toelichting
+-
+
+DE AANDUIDING WAARUIT DE ACTUELE DAN WEL HISTORISCHE STATUS BLIJKT
+
+Naam attribuutsoort
+Pandstatus
+Code attribuutsoort
+55.31
+XML-tag attribuutsoort
+pandstatus
+Definitie attribuutsoort
+De fase van de levenscyclus van een PAND, waarin het betreffende PAND zich bevindt.
+Herkomst definitie attribuutsoort
+Grondslagen Basis Gebouwen Registratie versie 2.3
+Datum opname attribuutsoort
+Februari 2004
+Domein attribuutsoort
+Status pand
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+1-1
+Indicatie authentiek
+Authentiek gegeven
+Regels attribuutsoort
+-
+Toelichting
+De basisregistratie gebouwen bevat gegevens over zowel daadwerkelijk aanwezige panden, als nog tot stand te brengen en verdwenen panden. Om het onderscheid tussen de stadia in de levenscyclus van het pand te kunnen maken, wordt gebruik gemaakt van dit statusgegeven.
+
+DE INGANGSDATUM VAN DE GELDIGHEID VAN EEN BEPAALDE COMBINATIE VAN GEGEVENS
+
+Naam attribuutsoort
+Datum begin geldigheid pandgegevens
+Code attribuutsoort
+55.91
+XML-tag attribuutsoort
+tijdvakgeldigheid\begindatumTijdvakGeldigheid
+Definitie attribuutsoort
+De begindatum van een periode waarin een of meer gegevens die worden bijgehouden over een PAND een wijziging hebben ondergaan.
+Herkomst definitie attribuutsoort
+Grondslagen Basis Gebouwen Registratie versie 4.0
+Datum opname attribuutsoort
+Februari 2006
+Domein attribuutsoort
+DatumTijd
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+1-1
+Indicatie authentiek
+Niet-authentiek gegeven
+Regels attribuutsoort
+-
+Toelichting
+Dit gegeven wordt gebruikt om de datum aan te geven waarop een nieuwe combinatie van gegevens is of zal gaan gelden.
+
+DE EINDDATUM VAN DE GELDIGHEID VAN EEN BEPAALDE COMBINATIE VAN GEGEVENS
+
+Naam attribuutsoort
+Datum einde geldigheid pandgegevens
+Code attribuutsoort
+55.92
+XML-tag attribuutsoort
+tijdvakgeldigheid\einddatumTijdvakGeldigheid
+Definitie attribuutsoort
+De einddatum van een periode waarin er geen wijzigingen hebben plaatsgevonden in de gegevens die worden bijgehouden over een PAND.
+Herkomst definitie attribuutsoort
+Grondslagen Basis Gebouwen Registratie versie 4.0
+Datum opname attribuutsoort
+Februari 2006
+Domein attribuutsoort
+DatumTijd
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+0-1
+Indicatie authentiek
+Niet-authentiek gegeven
+Regels attribuutsoort
+Dit gegeven dient in de registratie te worden opgenomen indien een of meer van de in de registratie opgenomen gegevens wijzigingen ondergaat. Alleen een datum die gelijk is aan of die gelegen is na de datum zoals opgenomen onder Ôdatum begin geldigheid pandgegevens' kan in de registratie worden opgenomen.
+Toelichting
+Dit gegeven wordt gebruikt om de datum aan te geven waarop de geldigheid van een bestaande combinatie van gegevens eindigt.
+
+DE AANTEKENING IN ONDERZOEK
+
+Naam attribuutsoort
+Aanduiding pandgegevens in onderzoek
+Code attribuutsoort
+55.93
+XML-tag attribuutsoort
+inOnderzoek
+Definitie attribuutsoort
+Een aanduiding waarmee wordt aangegeven dat een onderzoek wordt uitgevoerd naar de juistheid van een of meer gegevens van het betreffende object.
+Herkomst definitie attribuutsoort
+Grondslagen Basis Gebouwen Registratie versie 4.0
+Datum opname attribuutsoort
+Februari 2006
+Domein attribuutsoort
+Indicatie
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+1-1
+Indicatie authentiek
+Niet-authentiek gegeven
+Regels attribuutsoort
+Aan dit gegeven wordt een waarde 'J' toegekend op het moment dat een of meer gegevens van het object het onderwerp vormen van een onderzoek. Standaard kent dit gegeven een waarde 'N'.
+Toelichting
+-
+
+DE DAGTEKENING VAN HET BRONDOCUMENT
+
+Naam attribuutsoort
+Documentdatum mutatie pand
+Code attribuutsoort
+55.97
+XML-tag attribuutsoort
+bron\documentdatum
+Definitie attribuutsoort
+De datum waarop het brondocument is vastgesteld, op basis waarvan een opname of mutatie van gegevens ten aanzien van een PAND heeft plaatsgevonden.
+Herkomst definitie attribuutsoort
+Grondslagen Basis Gebouwen Registratie versie 2.3
+Datum opname attribuutsoort
+Februari 2004
+Domein attribuutsoort
+Datum
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+1-1
+Indicatie authentiek
+Niet-authentiek gegeven
+Regels attribuutsoort
+Alleen een datum die gelijk is aan of die is gelegen voor de datum van het opnemen of muteren van het betreffende gegeven kan in de registratie worden opgenomen.
+Toelichting
+In het geval het brondocument een besluit van een bestuursorgaan betreft, dan is de datum van het brondocument de datum waarop het besluit is genomen.
+
+HET INSCHRIJFNUMMER VAN HET BRONDOCUMENT
+
+Naam attribuutsoort
+Documentnummer mutatie pand
+Code attribuutsoort
+55.98
+XML-tag attribuutsoort
+bron\documentnummer
+Definitie attribuutsoort
+De unieke aanduiding van het brondocument op basis waarvan een opname of mutatie van gegevens ten aanzien van een PAND heeft plaatsgevonden.
+Herkomst definitie attribuutsoort
+Grondslagen Basis Gebouwen Registratie versie 2.3
+Datum opname attribuutsoort
+Februari 2004
+Domein attribuutsoort
+Documentnummering
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+1-1
+Indicatie authentiek
+Niet-authentiek gegeven
+Regels attribuutsoort
+-
+Toelichting
+-
+
+
+### Standplaats
+
+DE IDENTIFICATIECODE VAN DE STANDPLAATS
+
+Naam attribuutsoort
+Standplaatsidentificatie
+Code attribuutsoort
+57.01
+XML-tag attribuutsoort
+identificatie
+Definitie attribuutsoort
+De unieke aanduiding van een STANDPLAATS.
+Herkomst definitie attribuutsoort
+Grondslagen Basis Gebouwen Registratie versie 2.3
+Datum opname attribuutsoort
+Februari 2004
+Domein attribuutsoort
+Objectnummering (samengesteld)
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+1-1
+Indicatie authentiek
+Authentiek gegeven
+Regels attribuutsoort
+-
+Toelichting
+Elke standplaats waarvan gegevens zijn opgenomen in de basisregistratie gebouwen wordt uniek aangeduid door middel van een identificatiecode. Deze identificatiecode bestaat uit de gemeentecode volgens GBA tabel 33 gevolgd door een codering voor de objecttypering en een voor de registrerende gemeente uniek volgnummer.
+
+AANDUIDING DAT OPNEMING IS GEBASEERD OP ARTIKEL 10, EERSTE LID, ONDERDEEL B, VAN DE WET
+
+Naam attribuutsoort
+Indicatie geconstateerde standplaats
+Code attribuutsoort
+57.02
+XML-tag attribuutsoort
+officieel
+Definitie attribuutsoort
+Een aanduiding waarmee kan worden aangegeven dat een object in de registratie is opgenomen als gevolg van een feitelijke constatering, zonder dat er op het moment van opname sprake was van een regulier brondocument voor deze opname
+Herkomst definitie attribuutsoort
+Grondslagen Basis Gebouwen Registratie versie 4.0
+Datum opname attribuutsoort
+Februari 2006
+Domein attribuutsoort
+Indicatie
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+1-1
+Indicatie authentiek
+Niet-authentiek gegeven
+Regels attribuutsoort
+Aan dit gegeven wordt een waarde 'J' toegekend op het moment dat er sprake is van opname in de registratie op basis van een feitelijke constatering. Standaard kent dit gegeven een waarde 'N'.
+Toelichting
+Het feitelijk bestaan van een standplaats dient daadwerkelijk te worden geconstateerd. Het gaat dan bijvoorbeeld om het feitelijk gebruik van (een gedeelte van) een terrein dat binnen andere processen aan het licht is gekomen. 
+
+DE AANDUIDING WAARUIT DE ACTUELE DAN WEL HISTORISCHE STATUS BLIJKT
+
+Naam attribuutsoort
+Standplaatsstatus
+Code attribuutsoort
+57.03
+XML-tag attribuutsoort
+standplaatsStatus
+Definitie attribuutsoort
+De fase van de levenscyclus van een STANDPLAATS, waarin de betreffende STANDPLAATS zich bevindt.
+Herkomst definitie attribuutsoort
+Grondslagen Basis Gebouwen Registratie versie 4.0
+Datum opname attribuutsoort
+Februari 2006
+Domein attribuutsoort
+Status ligplaats en standplaats
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+1-1
+Indicatie authentiek
+Authentiek gegeven
+Regels attribuutsoort
+-
+Toelichting
+De basisregistratie gebouwen bevat gegevens over zowel daadwerkelijk aanwezige standplaatsen als ingetrokken standplaatsen. Om het onderscheid tussen de stadia in de levenscyclus van de standplaats te kunnen maken, wordt gebruik gemaakt van dit statusgegeven.
+
+DE IDENTIFICATIECODE VAN DE AAN DE STANDPLAATS TOEGEKENDE HOOFDADRES
+
+Naam attribuutsoort
+Aanduiding hoofdadres standplaats
+Code attribuutsoort
+57.10
+XML-tag attribuutsoort
+GerelateerdeAdressen\hoofdAdres
+Definitie attribuutsoort
+De identificatiecode nummeraanduiding waaronder het hoofdadres van een STANDPLAATS, dat in het kader van de basisregistratie gebouwen als zodanig is aangemerkt, is opgenomen in de basisregistratie adressen.
+Herkomst definitie attribuutsoort
+Grondslagen Basis Gebouwen Registratie versie 2.3
+Datum opname attribuutsoort
+Februari 2004
+Domein attribuutsoort
+Objectnummering (samengesteld)
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+1-1
+Indicatie authentiek
+Authentiek gegeven
+Regels attribuutsoort
+-
+Toelichting
+Met behulp van dit gegeven wordt aangegeven welk adres wordt aangemerkt als het hoofdadres van de standplaats (zie ook het gegeven aanduiding nevenadressen). Het gegeven omvat niet de opname van de adresgegevens zelf. In de basisregistratie gebouwen wordt slechts de aanduiding (identificatiecode nummeraanduiding) opgenomen waaronder het betreffende adres in de basisregistratie adressen bekend is. Met deze aanduiding kunnen de feitelijke adresgegevens worden opgehaald uit de basisregistratie adressen. Voor de gebruikers van de registratie kan met behulp van technische oplossingen binnen de te gebruiken applicaties het feitelijke adres worden gepresenteerd in plaats van de genoemde identificatiecode nummeraanduiding.
+
+DE IDENTIFICATIECODES VAN DE AAN DE STANDPLAATS TOEGEKENDE NEVENADRESSEN
+
+Naam attribuutsoort
+Aanduiding nevenadressen standplaats
+Code attribuutsoort
+57.11
+XML-tag attribuutsoort
+GerelateerdeAdressen\nevenAdres
+Definitie attribuutsoort
+De identificatiecodes nummeraanduiding waaronder nevenadressen van een STANDPLAATS, die in het kader van de basisregistratie gebouwen als zodanig zijn aangemerkt, zijn opgenomen in de basisregistratie adressen.
+Herkomst definitie attribuutsoort
+Grondslagen Basis Gebouwen Registratie versie 2.3
+Datum opname attribuutsoort
+Februari 2004
+Domein attribuutsoort
+Objectnummering (samengesteld)
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+0-N
+Indicatie authentiek
+Authentiek gegeven
+Regels attribuutsoort
+-
+Toelichting
+Aan een standplaats kunnen een of meer nevenadressen zijn toegekend.
+
+DE GEOMETRIE VAN DE STANDPLAATS
+
+Naam attribuutsoort
+Standplaatsgeometrie
+Code attribuutsoort
+57.20
+XML-tag attribuutsoort
+standplaatsGeometrie
+Definitie attribuutsoort
+De tweedimensionale geometrische representatie van de omtrekken van een STANDPLAATS.
+Herkomst definitie attribuutsoort
+Grondslagen Basis Gebouwen Registratie versie 2.3
+Datum opname attribuutsoort
+Februari 2004
+Domein attribuutsoort
+Ruimtelijke coördinaten
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+1-1
+Indicatie authentiek
+Authentiek gegeven
+Regels attribuutsoort
+Het object wordt gerepresenteerd door een vlak van het GML geometry type GM_Surface.
+Toelichting
+Met deze geometrische component wordt de ruimtelijke positionering van een standplaats vastgelegd. Een dergelijke ruimtelijke positionering staat in het dagelijks taalgebruik gelijk aan 'een kaartje van de standplaats'. Bij het vastleggen van de geometrische component gaat het echter niet om de verschijningsvorm van de presentatie (de kaart) maar om de gegevens die aan deze verschijningsvorm ten grondslag liggen. Deze gegevens bestaan uit een reeks van coördinaten in het RD stelsel die gezamenlijk de omtrek van de STANDPLAATS beschrijven. Hiertoe wordt gebruik gemaakt van de Grootschalige Basiskaart (lokaal of Nederland).
+
+DE INGANGSDATUM VAN DE GELDIGHEID VAN EEN BEPAALDE COMBINATIE VAN GEGEVENS
+
+Naam attribuutsoort
+Datum begin geldigheid standplaatsgegevens
+Code attribuutsoort
+57.91
+XML-tag attribuutsoort
+tijdvakgeldigheid\begindatumTijdvakGeldigheid
+Definitie attribuutsoort
+De begindatum van een periode waarin een of meer gegevens die worden bijgehouden over een STANDPLAATS een wijziging hebben ondergaan.
+Herkomst definitie attribuutsoort
+Grondslagen Basis Gebouwen Registratie versie 4.0
+Datum opname attribuutsoort
+Februari 2006
+Domein attribuutsoort
+DatumTijd
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+1-1
+Indicatie authentiek
+Niet-authentiek gegeven
+Regels attribuutsoort
+-
+Toelichting
+Dit gegeven wordt gebruikt om de datum aan te geven waarop een nieuwe combinatie van gegevens is of zal gaan gelden.
+
+DE EINDDATUM VAN DE GELDIGHEID VAN EEN BEPAALDE COMBINATIE VAN GEGEVENS
+
+Naam attribuutsoort
+Datum einde geldigheid standplaatsgegevens
+Code attribuutsoort
+57.92
+XML-tag attribuutsoort
+tijdvakgeldigheid\einddatumTijdvakGeldigheid
+Definitie attribuutsoort
+De einddatum van een periode waarin er geen wijzigingen hebben plaatsgevonden in de gegevens die worden bijgehouden over een STANDPLAATS.
+Herkomst definitie attribuutsoort
+Grondslagen Basis Gebouwen Registratie versie 4.0
+Datum opname attribuutsoort
+Februari 2006
+Domein attribuutsoort
+DatumTijd
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+0-1
+Indicatie authentiek
+Niet-authentiek gegeven
+Regels attribuutsoort
+Dit gegeven dient in de registratie te worden opgenomen indien een of meer van de in de registratie opgenomen gegevens wijzigingen ondergaat. Alleen een datum die gelijk is aan of die gelegen is na de datum zoals opgenomen onder Ôdatum begin geldigheid standplaatsgegevens' kan in de registratie worden opgenomen.
+Toelichting
+Dit gegeven wordt gebruikt om de datum aan te geven waarop de geldigheid van een bestaande combinatie van gegevens eindigt.
+
+DE AANTEKENING IN ONDERZOEK
+
+Naam attribuutsoort
+Aanduiding standplaatsgegevens in onderzoek
+Code attribuutsoort
+57.93
+XML-tag attribuutsoort
+inOnderzoek
+Definitie attribuutsoort
+Een aanduiding waarmee wordt aangegeven dat een onderzoek wordt uitgevoerd naar de juistheid van een of meer gegevens van het betreffende object.
+Herkomst definitie attribuutsoort
+Grondslagen Basis Gebouwen Registratie versie 4.0
+Datum opname attribuutsoort
+Februari 2006
+Domein attribuutsoort
+Indicatie
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+1-1
+Indicatie authentiek
+Niet-authentiek gegeven
+Regels attribuutsoort
+Aan dit gegeven wordt een waarde 'J' toegekend op het moment dat een of meer gegevens van het object het onderwerp vormen van een onderzoek. Standaard kent dit gegeven een waarde 'N'.
+Toelichting
+-
+
+DE DAGTEKENING VAN HET BRONDOCUMENT
+
+Naam attribuutsoort
+Documentdatum mutatie standplaats
+Code attribuutsoort
+57.97
+XML-tag attribuutsoort
+bron\documentdatum
+Definitie attribuutsoort
+De datum waarop het brondocument is vastgesteld, op basis waarvan een opname of mutatie van gegevens ten aanzien van een STANDPLAATS heeft plaatsgevonden.
+Herkomst definitie attribuutsoort
+Grondslagen Basis Gebouwen Registratie versie 2.3
+Datum opname attribuutsoort
+Februari 2004
+Domein attribuutsoort
+Datum
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+1-1
+Indicatie authentiek
+Niet-authentiek gegeven
+Regels attribuutsoort
+Alleen een datum die gelijk is aan of die is gelegen voor de datum van het opnemen of muteren van het betreffende gegeven kan in de registratie worden opgenomen.
+Toelichting
+In het geval het brondocument een besluit van een bestuursorgaan betreft, dan is de datum van het brondocument de datum waarop het besluit is genomen.
+
+
+HET INSCHRIJFNUMMER VAN HET BRONDOCUMENT
+
+Naam attribuutsoort
+Documentnummer mutatie standplaats
+Code attribuutsoort
+57.98
+XML-tag attribuutsoort
+bron\documentnummer
+Definitie attribuutsoort
+De unieke aanduiding van het brondocument op basis waarvan een opname of mutatie van gegevens ten aanzien van een STANDPLAATS heeft plaatsgevonden.
+Herkomst definitie attribuutsoort
+Grondslagen Basis Gebouwen Registratie versie 2.3
+Datum opname attribuutsoort
+Februari 2004
+Domein attribuutsoort
+Documentnummering
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+1-1
+Indicatie authentiek
+Niet-authentiek gegeven
+Regels attribuutsoort
+-
+Toelichting
+-
+
+
+### Verblijfsobject
+
+DE IDENTIFICATIECODE VAN HET VERBLIJFSOBJECT
+
+Naam attribuutsoort
+Verblijfsobjectidentificatie
+Code attribuutsoort
+56.01
+XML-tag attribuutsoort
+identificatie
+Definitie attribuutsoort
+De unieke aanduiding van een VERBLIJFSOBJECT.
+Herkomst definitie attribuutsoort
+Grondslagen Basis Gebouwen Registratie versie 2.3
+Datum opname attribuutsoort
+Februari 2004
+Domein attribuutsoort
+Objectnummering (samengesteld)
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+1-1
+Indicatie authentiek
+Authentiek gegeven
+Regels attribuutsoort
+-
+Toelichting
+Elk verblijfsobject waarvan gegevens zijn opgenomen in de basisregistratie gebouwen wordt uniek aangeduid door middel van een identificatiecode. Deze identificatiecode bestaat uit de gemeentecode volgens GBA tabel 33 gevolgd door een codering voor de objecttypering en een voor de registrerende gemeente uniek volgnummer.
+
+AANDUIDING DAT OPNEMING IS GEBASEERD OP ARTIKEL 10, EERSTE LID, ONDERDEEL B, VAN DE WET
+
+Naam attribuutsoort
+Indicatie geconstateerd verblijfsobject
+Code attribuutsoort
+56.02
+XML-tag attribuutsoort
+officieel
+Definitie attribuutsoort
+Een aanduiding waarmee kan worden aangegeven dat een object in de registratie is opgenomen als gevolg van een feitelijke constatering, zonder dat er op het moment van opname sprake was van een regulier brondocument voor deze opname
+Herkomst definitie attribuutsoort
+Grondslagen Basis Gebouwen Registratie versie 4.0
+Datum opname attribuutsoort
+Februari 2006
+Domein attribuutsoort
+Indicatie
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+1-1
+Indicatie authentiek
+Niet-authentiek gegeven
+Regels attribuutsoort
+Aan dit gegeven wordt een waarde 'J' toegekend op het moment dat er sprake is van opname in de registratie op basis van een feitelijke constatering. Standaard kent dit gegeven een waarde 'N'.
+Toelichting
+Het feitelijk bestaan van een verblijfsobject dient daadwerkelijk te worden geconstateerd. Het gaat dan bijvoorbeeld om niet eerder in de registratie opgenomen verblijfsobjecten, vanwege het ontbreken van de voor de bouw benodigde vergunning of vanwege het niet benodigd zijn van een dergelijke vergunning. 
+
+DE IDENTIFICATIECODE VAN DE AAN HET VERBLIJFSOBJECT TOEGEKENDE HOOFDADRES
+
+Naam attribuutsoort
+Aanduiding hoofdadres verblijfsobject
+Code attribuutsoort
+56.10
+XML-tag attribuutsoort
+GerelateerdeAdressen\hoofdAdres
+Definitie attribuutsoort
+De identificatiecode nummeraanduiding waaronder het hoofdadres van een VERBLIJFSOBJECT, dat in het kader van de basisregistratie gebouwen als zodanig is aangemerkt, is opgenomen in de basisregistratie adressen.
+Herkomst definitie attribuutsoort
+Grondslagen Basis Gebouwen Registratie versie 2.3
+Datum opname attribuutsoort
+Februari 2004
+Domein attribuutsoort
+Objectnummering (samengesteld)
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+1-1
+Indicatie authentiek
+Authentiek gegeven
+Regels attribuutsoort
+-
+Toelichting
+Met behulp van dit gegeven wordt aangegeven welk adres wordt aangemerkt als het hoofdadres van het verblijfsobject (zie ook het gegeven aanduiding nevenadressen). Het gegeven omvat niet de opname van de adresgegevens zelf. In de basisregistratie gebouwen wordt slechts de aanduiding (identificatiecode nummeraanduiding) opgenomen waaronder het betreffende adres in de basisregistratie adressen bekend is. Met deze aanduiding kunnen de feitelijke adresgegevens worden opgehaald uit de basisregistratie adressen. Voor de gebruikers van de registratie kan met behulp van technische oplossingen binnen de te gebruiken applicaties het feitelijke adres worden gepresenteerd in plaats van de genoemde identificatiecode nummeraanduiding.
+
+DE IDENTIFICATIECODES VAN DE AAN HET VERBLIJFSOBJECT TOEGEKENDE NEVENADRESSEN
+
+Naam attribuutsoort
+Aanduiding nevenadressen verblijfsobject
+Code attribuutsoort
+56.11
+XML-tag attribuutsoort
+GerelateerdeAdressen\nevenAdres
+Definitie attribuutsoort
+De identificatiecodes nummeraanduiding waaronder nevenadressen van een VERBLIJFSOBJECT, die in het kader van de basisregistratie gebouwen als zodanig zijn aangemerkt, zijn opgenomen in de basisregistratie adressen.
+Herkomst definitie attribuutsoort
+Grondslagen Basis Gebouwen Registratie versie 2.3
+Datum opname attribuutsoort
+Februari 2004
+Domein attribuutsoort
+Objectnummering (samengesteld)
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+0-N
+Indicatie authentiek
+Authentiek gegeven
+Regels attribuutsoort
+-
+Toelichting
+Aan sommige verblijfsobjecten zijn meer adressen toegekend. Hiervan kan bijvoorbeeld sprake zijn indien een verblijfsobject is gelegen aan twee of meer straten, zoals een winkelruimte die een ingang heeft aan de winkelpromenade en een expeditie-ingang heeft aan de achter de winkelpromenade lopende expeditiestraat. Met het gegeven aanduiding nevenadressen wordt aangegeven welke adressen eventueel zijn aangemerkt als nevenadressen (zie ook aanduiding hoofdadres).
+
+DE GEOMETRIE VAN HET VERBLIJFSOBJECT
+
+Naam attribuutsoort
+Verblijfsobjectgeometrie
+Code attribuutsoort
+56.20
+XML-tag attribuutsoort
+verblijfsobjectGeometrie
+Definitie attribuutsoort
+De minimaal tweedimensionale geometrische representatie van een VERBLIJFSOBJECT.
+Herkomst definitie attribuutsoort
+Grondslagen Basis Gebouwen Registratie versie 2.3
+Datum opname attribuutsoort
+Februari 2004
+Domein attribuutsoort
+Ruimtelijke coördinaten
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+1-1
+Indicatie authentiek
+Authentiek gegeven
+Regels attribuutsoort
+Het object wordt gerepresenteerd door een punt van het GML geometry type GM_Point. Voorwaarde is dat de verblijfsobjectgeometrie is gelegen binnen het pandcontour van het gerelateerde pand of een van de gerelateerde panden. Ook representatie door GM_Surface is toegestaan. In dat geval dient te worden voldaan aan de eisen zoals die zijn geformuleerd ten aanzien van pandgeometrie bij het objecttype pand.
+
+Toelichting
+De geometrie van een verblijfsobject zal in het algemeen bestaan uit de opname van hetzij een coördinatenpaar dat de toegangsdeur van het verblijfsobject representeert hetzij een coördinatenpaar dat de centroïde van het verblijfsobject representeert. Het coördinatenpaar kan ook elders binnen het pandcontour waarbinnen het verblijfsobject is gelegen worden gepositioneerd. 
+
+Ook in zeer complexe gebouwen, waarin de verblijfsobjecten minder geordend over panden verdeeld zijn, kan met dit gegeven in combinatie met de pandgeometrie een globaal beeld worden verkregen van de ligging van het verblijfsobject. Hierbij geldt dat de horizontale positie in ieder geval wordt weergegeven in de vorm van een x-coördinaat en een y-coördinaat. Deze coördinaten worden, zoals dat ook het geval is voor de geometrie van panden, gerepresenteerd in het RD stelsel. Om tot een betere positionering te komen, kunnen gemeenten in overweging nemen ook een z-coördinaat op te nemen, waardoor tevens een beeld kan worden verkregen van de verticale positie van een verblijfsobject. 
+
+Voor een constructie waarin puntobjecten worden opgenomen, is gekozen omdat er in de meeste gevallen geen volledige geometrische omschrijving van verblijfsobjecten beschikbaar is. De geometrische beschrijving van aan gebouwen gerelateerde objecten kent veelal het pand als het laagste abstractieniveau (zie het gegeven pandgeometrie). 
+
+DE GEBRUIKSDOELEN DIE AAN HET VERBLIJFSOBJECT éJN TOEGEKEND
+
+Naam attribuutsoort
+Gebruiksdoel verblijfsobject
+Code attribuutsoort
+56.30
+XML-tag attribuutsoort
+gebruiksdoelVerblijfsobject
+Definitie attribuutsoort
+Een categorisering van de gebruiksdoelen van het betreffende VERBLIJFSOBJECT, zoals dit door de overheid als zodanig is toegestaan.
+Herkomst definitie attribuutsoort
+Grondslagen Basis Gebouwen Registratie versie 2.3
+Datum opname attribuutsoort
+Februari 2004
+Domein attribuutsoort
+Gebruiksdoeleinden
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+1-N
+Indicatie authentiek
+Authentiek gegeven
+Regels attribuutsoort
+Het gegeven dient voor elke verschijningsvorm van het objecttype ten minste één waarde te bevatten.
+Toelichting
+Het gebruiksdoel zal initieel worden afgeleid uit de bouwkundige gebruiksfunctie conform de categorisering van het Bouwbesluit 2003 zoals deze in de bouwvergunning als zodanig is aangemerkt. Op een later moment kunnen ook door de gemeente geformaliseerde gebruikswijzigingen als basis dienen voor opname van een aanvullend gebruiksdoel. Het gebruiksdoel dient niet te worden verward met de planologische bestemming en het feitelijk gebruik.
+
+DE OPPERVLAKTE VAN HET VERBLIJFSOBJECT
+
+Naam attribuutsoort
+Oppervlakte verblijfsobject
+Code attribuutsoort
+56.31
+XML-tag attribuutsoort
+oppervlakteVerblijfsobject
+Definitie attribuutsoort
+De gebruiksoppervlakte van een VERBLIJFSOBJECT.
+Herkomst definitie attribuutsoort
+Grondslagen Basis Gebouwen Registratie versie 2.3
+Datum opname attribuutsoort
+Februari 2004
+Domein attribuutsoort
+Oppervlaktemaat
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+1-1
+Indicatie authentiek
+Authentiek gegeven
+Regels attribuutsoort
+De bepaling van de oppervlakte binnen een verblijfsobject geschiedt conform hetgeen in NEN 2580 is vastgelegd omtrent gebruiksoppervlakte. Tot de oppervlakte van een verblijfsobject wordt uitsluitend gerekend de binnenruimte, zoals gedefinieerd in NEN 2580, van een dergelijk object. De gemeenschappelijke ruimten en algemene ruimten, zoals eveneens genoemd in NEN 2580, maken geen onderdeel uit van de oppervlakte van een verblijfsobject. Er dienen dus geen percentages van de oppervlakte van dergelijke gedeelde ruimten aan de oppervlakte van het verblijfsobject te worden toegerekend. 
+Ten aanzien van de nauwkeurigheid van de oppervlakte wordt de maximaal toegestane afwijking in de oppervlakte van een verblijfsobject gesteld op 1,15 maal de wortel van de oppervlakte, met dien verstande dat bij objecten met een oppervlakte van 1 m2 een toegestane afwijking geldt van 1 m2 (100%).
+Toelichting
+De exacte wijze van bepalen van de gebruiksoppervlakte wordt beschreven in NEN 2580. In essentie komt dit erop neer dat de gebruiksoppervlakte van een VERBLIJFSOBJECT wordt bepaald door hetgeen op vloerniveau wordt gemeten uitgaande van de binnenzijde van de omhullende scheidingsconstructies. Vides en schalmgaten van meer dan 4 m2 blijven buiten beschouwing, evenals inspringingen en uitspringingen langs de omtrekken van minder dan 0,5 m2.
+
+DE AANDUIDING WAARUIT DE ACTUELE DAN WEL HISTORISCHE STATUS BLIJKT
+
+Naam attribuutsoort
+Verblijfsobjectstatus
+Code attribuutsoort
+56.32
+XML-tag attribuutsoort
+verblijfsobjectStatus
+Definitie attribuutsoort
+De fase van de levenscyclus van een VERBLIJFSOBJECT, waarin het betreffende VERBLIJFSOBJECT zich bevindt.
+Herkomst definitie attribuutsoort
+Grondslagen Basis Gebouwen Registratie versie 2.3
+Datum opname attribuutsoort
+Februari 2004
+Domein attribuutsoort
+Status verblijfsobject
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+1-1
+Indicatie authentiek
+Authentiek gegeven
+Regels attribuutsoort
+-
+Toelichting
+De basisregistratie gebouwen bevat gegevens over zowel daadwerkelijk aanwezige verblijfsobjecten, als nog tot stand te brengen en verdwenen verblijfsobjecten. Om het onderscheid tussen de stadia in de levenscyclus van het verblijfsobject te kunnen maken, wordt gebruik gemaakt van dit statusgegeven.
+
+DE IDENTIFICATIECODES VAN DE PANDEN WAARVAN HET VERBLIJFSOBJECT ONDERDEEL IS
+
+Naam attribuutsoort
+Pandrelatering
+Code attribuutsoort
+56.90
+XML-tag attribuutsoort
+GerelateerdPand
+Definitie attribuutsoort
+De unieke aanduidingen van de PANDEN waarvan het VERBLIJFSOBJECT onderdeel uitmaakt.
+Herkomst definitie attribuutsoort
+Grondslagen Basis Gebouwen Registratie versie 2.3
+Datum opname attribuutsoort
+Februari 2004
+Domein attribuutsoort
+Objectnummering (samengesteld)
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+1-N
+Indicatie authentiek
+Authentiek gegeven
+Regels attribuutsoort
+-
+Toelichting
+Ten aanzien van elk in de basisregistratie gebouwen opgenomen verblijfsobject wordt aangegeven, welke identificatiecodes zijn toegekend aan de panden waarbinnen het verblijfsobject is gelegen. In de meeste gevallen zal dit een enkel pand betreffen. In een aantal gevallen zal het verblijfsobject zijn gelegen in meer dan één pand. In dat geval worden hier de identificatiecodes opgenomen van de verschillende panden waarbinnen het verblijfsobject is gelegen. Bij het relateren van het verblijfsobject aan het pand of de panden waarvan het verblijfsobject onderdeel uitmaakt, wordt gebruik gemaakt van de pandidentificatie, zoals deze eveneens in de basisregistratie gebouwen is opgenomen.
+
+DE INGANGSDATUM VAN DE GELDIGHEID VAN EEN BEPAALDE COMBINATIE VAN GEGEVENS
+
+Naam attribuutsoort
+Datum begin geldigheid verblijfsobjectgegevens
+Code attribuutsoort
+56.91
+XML-tag attribuutsoort
+tijdvakgeldigheid\begindatumTijdvakGeldigheid
+Definitie attribuutsoort
+De begindatum van een periode waarin een of meer gegevens die worden bijgehouden over een VERBLIJFSOBJECT een wijziging hebben ondergaan.
+Herkomst definitie attribuutsoort
+Grondslagen Basis Gebouwen Registratie versie 4.0
+Datum opname attribuutsoort
+Februari 2006
+Domein attribuutsoort
+DatumTijd
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+1-1
+Indicatie authentiek
+Niet-authentiek gegeven
+Regels attribuutsoort
+-
+Toelichting
+Dit gegeven wordt gebruikt om de datum aan te geven waarop een nieuwe combinatie van gegevens is of zal gaan gelden.
+
+
+
+DE EINDDATUM VAN DE GELDIGHEID VAN EEN BEPAALDE COMBINATIE VAN GEGEVENS
+
+Naam attribuutsoort
+Datum einde geldigheid verblijfsobjectgegevens
+Code attribuutsoort
+56.92
+XML-tag attribuutsoort
+tijdvakgeldigheid\einddatumTijdvakGeldigheid
+Definitie attribuutsoort
+De einddatum van een periode waarin er geen wijzigingen hebben plaatsgevonden in de gegevens die worden bijgehouden over een VERBLIJFSOBJECT.
+Herkomst definitie attribuutsoort
+Grondslagen Basis Gebouwen Registratie versie 4.0
+Datum opname attribuutsoort
+Februari 2006
+Domein attribuutsoort
+DatumTijd
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+0-1
+Indicatie authentiek
+Niet-authentiek gegeven
+Regels attribuutsoort
+Dit gegeven dient in de registratie te worden opgenomen indien een of meer van de in de registratie opgenomen gegevens wijzigingen ondergaat. Alleen een datum die gelijk is aan of die gelegen is na de datum zoals opgenomen onder 'datum begin geldigheid verblijfsobjectgegevens' kan in de registratie worden opgenomen.
+Toelichting
+Dit gegeven wordt gebruikt om de datum aan te geven waarop de geldigheid van een bestaande combinatie van gegevens eindigt.
+
+DE AANTEKENING IN ONDERZOEK
+
+Naam attribuutsoort
+Aanduiding verblijfsobjectgegevens in onderzoek
+Code attribuutsoort
+56.93
+XML-tag attribuutsoort
+inOnderzoek
+Definitie attribuutsoort
+Een aanduiding waarmee wordt aangegeven dat een onderzoek wordt uitgevoerd naar de juistheid van een of meer gegevens van het betreffende object.
+Herkomst definitie attribuutsoort
+Grondslagen Basis Gebouwen Registratie versie 4.0
+Datum opname attribuutsoort
+Februari 2006
+Domein attribuutsoort
+Indicatie
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+1-1
+Indicatie authentiek
+Niet-authentiek gegeven
+Regels attribuutsoort
+Aan dit gegeven wordt een waarde 'J' toegekend op het moment dat een of meer gegevens van het object het onderwerp vormen van een onderzoek. Standaard kent dit gegeven een waarde 'N'.
+Toelichting
+-
+
+DE DAGTEKENING VAN HET BRONDOCUMENT
+
+Naam attribuutsoort
+Documentdatum mutatie verblijfsobject
+Code attribuutsoort
+56.97
+XML-tag attribuutsoort
+bron\documentdatum
+Definitie attribuutsoort
+De datum waarop het brondocument is vastgesteld, op basis waarvan een opname of mutatie van gegevens ten aanzien van een VERBLIJFSOBJECT heeft plaatsgevonden.
+Herkomst definitie attribuutsoort
+Grondslagen Basis Gebouwen Registratie versie 2.3
+Datum opname attribuutsoort
+Februari 2004
+Domein attribuutsoort
+Datum
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+1-1
+Indicatie authentiek
+Niet-authentiek gegeven
+Regels attribuutsoort
+Alleen een datum die gelijk is aan of die is gelegen voor de datum van het opnemen of muteren van het betreffende gegeven kan in de registratie worden opgenomen.
+Toelichting
+In het geval het brondocument een besluit van een bestuursorgaan betreft, dan is de datum van het brondocument de datum waarop het besluit is genomen.
+
+HET INSCHRIJFNUMMER VAN HET BRONDOCUMENT
+
+Naam attribuutsoort
+Documentnummer mutatie verblijfsobject
+Code attribuutsoort
+56.98
+XML-tag attribuutsoort
+bron\documentnummer
+Definitie attribuutsoort
+De unieke aanduiding van het brondocument op basis waarvan een opname of mutatie van gegevens ten aanzien van een VERBLIJFSOBJECT heeft plaatsgevonden.
+Herkomst definitie attribuutsoort
+Grondslagen Basis Gebouwen Registratie versie 2.3
+Datum opname attribuutsoort
+Februari 2004
+Domein attribuutsoort
+Documentnummering
+Indicatie materiële historie
+J
+Indicatie formele historie
+J
+Indicatie kardinaliteit
+1-1
+Indicatie authentiek
+Niet-authentiek gegeven
+Regels attribuutsoort
+-
+Toelichting
+-
+
+# Domeinen
+
+## Adressenregistratie en gebouwenregistratie
+
+DATUM
+
+Naam domein
+Datum
+Definitie domein
+De aanduiding van een periode van 24 uur, beginnend om 00:00 uur, volgens de in Nederland geldende kalendersystematiek.
+Herkomst definitie domein
+Grondslagen Basis Gebouwen Registratie versie 3.0
+Datum opname domein
+Augustus 2004
+Waardenverzameling domein
+Alle datums gelegen op of na 1 januari van het jaar 0.
+Formaat domein
+N8
+Uitwisselingsmasker domein
+JJJJMMDD
+Toelichting
+Een datum wordt met exact 8 numerieke posities weergegeven.
+
+
+DATUMTIJD
+
+Naam domein
+DatumTijd
+Definitie domein
+De aanduiding van een periode van 24 uur, beginnend om 00:00:00:00 uur, volgens de in Nederland geldende kalendersystematiek.
+Herkomst definitie domein
+Ontleend aan Grondslagen Basis Gebouwen Registratie versie 3.0
+Datum opname domein
+Maart 2009
+Waardenverzameling domein
+Alle datums gelegen op of na 1 januari van het jaar 0.
+Formaat domein
+N16
+Uitwisselingsmasker domein
+JJJJMMDDUUMMSSmm
+Toelichting
+Een datum wordt met exact 8 numerieke posities weergegeven, aangevuld met 8 numerieke posities om een nader tijdstip op die betreffende datum te kunnen aangeven. Dit tijdstip is nodig om het mogelijk te maken om op één datum meer versies van de gegevens die zijn bijgehouden over het object te kunnen vastleggen. De betekenis van de tijdstippen moet dan ook niet als precies tijdstip op de dag geïnterpreteerd worden, maar als een ordenende waarde om de volgorde van mutaties inzichtelijk te maken. De keuze om met 8 posities voor een betekenisloos tijdstip te werken boven een volgnummer is ingegeven door internationale ontwikkelingen waarin veelal met DateTime wordt gewerkt.
+
+DOCUMENTNUMMERING
+
+Naam domein
+Documentnummering
+Definitie domein
+De unieke aanduiding van de vindplaats van een document binnen een organisatie.
+Herkomst definitie domein
+Grondslagen Basis Gebouwen Registratie versie 3.0
+Datum opname domein
+Augustus 2004
+Waardenverzameling domein
+Alle bestaande alfanumerieke tekens.
+Formaat domein
+AN..20
+Uitwisselingsmasker domein
+-
+Toelichting
+Naast numerieke tekens kan dus ook gebruik worden gemaakt van letters uit het alfabet en bijzondere leestekens als verbindingsstreepjes en scheidingstekens om documenten binnen een organisatie uniek aan te duiden.
+
+GEMEENTECODERING
+
+Naam domein
+Gemeentecodering (subdomein)
+Definitie domein
+De unieke aanduiding van de gemeente in Nederland die aan het object een identificatienummer heeft toegekend.
+Herkomst definitie domein
+Ontleend aan Logisch Ontwerp GBA versie 3.0
+Datum opname domein
+Oktober 2002
+Waardenverzameling domein
+De geldende Tabel 33 (Tabel gemeentenamen) zoals behorende bij het actuele Logisch Ontwerp GBA.
+Formaat domein
+AN4
+Uitwisselingsmasker domein
+-
+Toelichting
+Voor de codering van gemeenten wordt gebruik gemaakt van een binnen het openbaar bestuur breed geaccepteerde vorm van codering, zoals deze tot stand is gekomen bij de ontwikkeling van de GBA.
+
+INDICATIE
+
+Naam domein
+Indicatie
+Definitie domein
+Een aanduiding waarmee wordt aangegeven of een bepaalde indicatie al dan niet van toepassing is op een verschijningsvorm van een object in de registratie.
+Herkomst definitie domein
+Grondslagen Basis Gebouwen Registratie versie 4.0
+Datum opname domein
+Februari 2006
+Waardenverzameling domein
+J
+N
+Formaat domein
+AN1
+Uitwisselingsmasker domein
+-
+Toelichting
+-
+
+OBJECTNUMMERING
+
+Naam domein
+Objectnummering (samengesteld)
+Definitie domein
+Unieke objectaanduiding binnen een gemeente.
+Herkomst definitie domein
+Grondslagen Basis Gebouwen Registratie versie 2.3
+Datum opname domein
+Februari 2004
+Waardenverzameling domein
+Combinatie van het (viercijferig) subdomein 'gemeentecode' (volgens GBA tabel 33), het (tweecijferig) subdomein 'objecttypecode' en een voor het betreffende objecttype binnen een gemeente uniek (tiencijferig) subdomein 'objectvolgnummer'.
+Formaat domein
+AN16
+Uitwisselingsmasker domein
+-
+Toelichting
+Indien een 'objectvolgnummer' uit minder dan tien posities bestaat dan dient deze ten behoeve van de uitwisseling te worden aangevuld met voorloopnullen. De van de objectnummering onderdeel uitmakende gemeentecode, kan niet worden gebruikt om te bepalen binnen welke gemeente een object is gelegen.
+
+OBJECTTYPECODE
+
+Naam domein
+Objecttypecode (subdomein)
+Definitie domein
+Een code waarmee het objecttype van een object wordt aangegeven.
+Herkomst definitie domein
+Grondslagen Basis Gebouwen Registratie versie 4.0
+Datum opname domein
+Februari 2006
+Waardenverzameling domein
+01 verblijfsobject
+02 ligplaats
+03 standplaats
+10 pand 
+20 nummeraanduiding
+30 openbare ruimte
+
+Formaat domein
+AN2
+Uitwisselingsmasker domein
+-
+Toelichting
+Deze codering maakt onderdeel uit van de unieke objectaanduiding. Het is met name bedoeld om objecten van verschillende adresseerbare objecttypen uniek van elkaar te kunnen onderscheiden.
+
+OBJECTVOLGNUMMER
+
+Naam domein
+Objectvolgnummer (subdomein)
+Definitie domein
+Een uniek volgnummer waarmee een object van een bepaald objecttype binnen een gemeente kan worden aangeduid.
+Herkomst definitie domein
+Grondslagen Basis Gebouwen Registratie versie 2.3
+Datum opname domein
+Februari 2004
+Waardenverzameling domein
+Alle natuurlijke getallen tussen 0 en 9.999.999.999.
+Formaat domein
+AN10
+Uitwisselingsmasker domein
+-
+Toelichting
+Indien een 'objectvolgnummer' uit minder dan tien posities bestaat dan dient deze ten behoeve van de uitwisseling te worden aangevuld met voorloopnullen.
+
+RUIMTELIJKE COÖRDINATEN
+
+Naam domein
+Ruimtelijke coördinaten
+Definitie domein
+Een aanduiding waarbij met geometrische coördinaten de ruimtelijke ligging van een objecttype wordt beschreven.
+Herkomst definitie domein
+Grondslagen Basis Gebouwen Registratie versie 3.0
+Datum opname domein
+Augustus 2004
+Waardenverzameling domein
+Ruimtelijk referentiesysteem
+Ten aanzien van de x-coördinaten en de y-coördinaten zijn alle binnen Nederland gelegen waarden van het stelsel van Rijksdriehoeksmeting een geldige waarde. Het gaat daarbij om:
+x-coördinaten: in meters aangeven in het bereik 000000 tot en met 280000 met exact drie decimalen.
+y-coördinaat: in meters aangegeven in het bereik van 300000 tot en met 625000 met exact drie decimalen. 
+Ten aanzien van de z-coördinaat zijn alle toegestane NAP waarden in meters een geldige waarde. Het gaat daarbij om alle getallen in het bereik -1000 tot en met +10000 met exact twee decimalen.
+Formaat domein
+GML
+Uitwisselingsmasker domein
+GML simple feature profile vanaf versie 3.1.1 waarbij gebruik wordt gemaakt van GM_Point en GM_Surface en waarvan de vlakken bestaan uit opeenvolgende coördinaten (geen bogen).
+Toelichting
+Geography Markup Language (GML) is een nadere uitwerking van XML geschreven in XML Schema voor het modelleren en uitwisselen van geografische informatie. GML is een syntax die verschillende objecttyperingen biedt voor het beschrijven van geografie zoals bijvoorbeeld ruimtelijk referentiesysteem, geometrie en tijd. Door de ruimtelijke coördinaten uit te wisselen in GML wordt aangesloten bij de internationale standaarden van ISO en OpenGIS en de nationale standaard NEN 3610 (basismodel geo-informatie). Gebruik wordt gemaakt van het GML simple feature profile vanaf versie 3.1.1 In dit GML profiel kan geen gebruik worden gemaakt van arcs (bogen).
+
+
+## Adressenregistratie
+
+HUISLETTERING
+
+Naam domein
+Huislettering
+Definitie domein
+De lettering van een geadresseerd object.
+Herkomst definitie domein
+Grondslagen Basis Registratie Adressen versie 2.0
+Datum opname domein
+Oktober 2002
+Waardenverzameling domein
+a - z , A Ð Z
+Formaat domein
+AN..1
+Uitwisselingsmasker domein
+-
+Toelichting
+-
+
+HUISNUMMERING
+
+Naam domein
+Huisnummering
+Definitie domein
+De nummering van een geadresseerd object.
+Herkomst definitie domein
+Grondslagen Basis Registratie Adressen versie 2.0
+Datum opname domein
+Oktober 2002
+Waardenverzameling domein
+Alle natuurlijke getallen tussen 1 en 99999.
+Formaat domein
+N..5
+Uitwisselingsmasker domein
+-
+Toelichting
+-
+
+HUISNUMMERTOEVOEGING
+
+Naam domein
+Huisnummertoevoeging
+Definitie domein
+De toevoeging aan de nummering van een geadresseerd object.
+Herkomst definitie domein
+Grondslagen Basis Registratie Adressen versie 2.0
+Datum opname domein
+Oktober 2002
+Waardenverzameling domein
+a - z , A - Z , 0 Ð 9
+Formaat domein
+AN..4
+Uitwisselingsmasker domein
+-
+Toelichting
+-
+
+NAAMGEVING OBJECT
+
+Naam domein
+Naamgeving object
+Definitie domein
+Benaming van een object.
+Herkomst definitie domein
+Grondslagen Basis Registratie Adressen versie 2.0
+Datum opname domein
+Oktober 2002
+Waardenverzameling domein
+Tekens gecodeerd volgens de UTF-8 standaard.
+Formaat domein
+AN..80
+Uitwisselingsmasker domein
+-
+Toelichting
+Het maximale aantal te gebruiken tekens voor een benaming is tachtig. Het verdient aanbeveling te streven naar korte benamingen.
+
+POSTCODE
+
+Naam domein
+Postcode
+Definitie domein
+Een coderingssystematiek zoals ontwikkeld en beheerd door TNT Post.
+Herkomst definitie domein
+Grondslagen Basis Registratie Adressen versie 3.0
+Datum opname domein
+Augustus 2004
+Waardenverzameling domein
+1000AA tot en met 9999ZZ
+Formaat domein
+AN6
+Uitwisselingsmasker domein
+NNNNAA
+Toelichting
+De postcode is afkomstig van TNT Post.
+
+STATUS NAAMGEVING
+
+Naam domein
+Status naamgeving
+Definitie domein
+Een aanduiding van alle waarden die de status van een openbare ruimte of een nummeraanduiding kan aannemen.
+Herkomst definitie domein
+Grondslagen Basis Registratie Adressen versie 4.0
+Datum opname domein
+Februari 2006
+Waardenverzameling domein
+Naamgeving uitgegeven
+Naamgeving ingetrokken
+Formaat domein
+AN..80
+Uitwisselingsmasker domein
+-
+Toelichting
+Een statusaanduiding kent een limitatief karakter en kan uitsluitend een van de genoemde waarden aannemen.
+
+STATUS WOONPLAATS
+
+Naam domein
+Status woonplaats
+Definitie domein
+Een aanduiding van alle waarden die de status van een woonplaats kan aannemen.
+Herkomst definitie domein
+Grondslagen Basis Registratie Adressen versie 4.0
+Datum opname domein
+Februari 2006
+Waardenverzameling domein
+Woonplaats aangewezen
+Woonplaats ingetrokken
+Formaat domein
+AN..80
+Uitwisselingsmasker domein
+-
+Toelichting
+Een statusaanduiding kent een limitatief karakter en kan uitsluitend een van de genoemde waarden aannemen.
+
+TYPERING ADRESSEERBARE OBJECTTYPEN
+
+Naam domein
+Typering adresseerbare objecttypen
+Definitie domein
+Een codering van de verschillende waarden die de typering van een adresseerbaar objecttype kan aannemen.
+Herkomst definitie domein
+Grondslagen Basis Registratie Adressen versie 2.0
+Datum opname domein
+Oktober 2002
+Waardenverzameling domein
+Verblijfsobject
+Standplaats
+Ligplaats
+Formaat domein
+AN..20
+Uitwisselingsmasker domein
+
+Toelichting
+Een typering van de adresseerbare objecttypen kent een limitatief karakter en kan uitsluitend een van de genoemde waarden aannemen.
+
+TYPERING OPENBARE RUIMTE
+
+Naam domein
+Typering openbare ruimte
+Definitie domein
+Een codering van de verschillende waarden die de typering van een openbare ruimte kan aannemen.
+Herkomst definitie domein
+Grondslagen Basis Registratie Adressen versie 2.0
+Datum opname domein
+Oktober 2002
+Waardenverzameling domein
+Weg
+Water
+Spoorbaan
+Terrein
+Kunstwerk
+Landschappelijk gebied
+Administratief gebied
+Formaat domein
+AN..40
+Uitwisselingsmasker domein
+
+Toelichting
+Een typering van de openbare ruimten kent een limitatief karakter en kan uitsluitend een van de genoemde waarden aannemen. De oorsprong van deze waarden is gelegen in NEN 3610.
+
+WOONPLAATSCODERING
+
+Naam domein
+Woonplaatscodering
+
+Definitie domein
+De unieke numerieke aanduiding van een woonplaats in Nederland.
+
+Herkomst definitie domein
+Grondslagen Basis Registratie Adressen versie 3.0
+Datum opname domein
+Augustus 2004
+Waardenverzameling domein
+0001 tot en met 9999
+
+Formaat domein
+AN4
+
+Uitwisselingsmasker domein
+-
+
+Toelichting
+De unieke codering van woonplaatsen vindt plaats met behulp van een code die door de Dienst wordt verstrekt.
+
+
+
+## Gebouwenregistratie
+
+GEBRUIKSDOELEINDEN
+
+Naam domein
+Gebruiksdoeleinden
+Definitie domein
+Een categorisering waarmee het gebruiksdoel van een object kan worden verbijzonderd.
+Herkomst definitie domein
+Grondslagen Basis Gebouwen Registratie versie 3.0
+Datum opname domein
+Augustus 2004
+Waardenverzameling domein
+woonfunctie
+bijeenkomstfunctie
+celfunctie
+gezondheidszorgfunctie
+industriefunctie
+kantoorfunctie
+logiesfunctie
+onderwijsfunctie
+sportfunctie
+winkelfunctie
+overige gebruiksfunctie
+Formaat domein
+AN..80
+Uitwisselingsmasker domein
+-
+Toelichting
+Het waardenbereik van de categorisering van het gebruiksdoel van een object stemt overeen met het bepaalde in artikel 1 van het Bouwbesluit 2003. Het waardenbereik van het gegeven gebruiksdoeleinden kent een limitatief karakter en kan uitsluitend een of meer van de genoemde waarden aannemen.
+
+JAAR
+
+Naam domein
+Jaar
+Definitie domein
+De aanduiding van een periode van 365 dagen, dan wel 366 dagen indien het een schrikkeljaar betreft, beginnend op 1 januari en eindigend op 31 december, volgens de in Nederland geldende kalendersystematiek.
+Herkomst definitie domein
+Grondslagen Basis Gebouwen Registratie versie 3.0
+Datum opname domein
+Augustus 2004
+Waardenverzameling domein
+Alle jaren vanaf het jaar 0.
+Formaat domein
+N4
+Uitwisselingsmasker domein
+JJJJ
+Toelichting
+Een jaar wordt volgens de Nederlandse notatiewijze met exact 4 numerieke posities weergegeven.
+
+
+OPPERVLAKTEMAAT
+
+Naam domein
+Oppervlaktemaat
+Definitie domein
+Een waarde waarmee het geheel aantal m2 van een bepaalde oppervlakte wordt aangegeven.
+Herkomst definitie domein
+Grondslagen Basis Gebouwen Registratie versie 4.0
+Datum opname domein
+Augustus 2006
+Waardenverzameling domein
+Alle natuurlijke getallen van 1 tot en met 999.999
+Formaat domein
+N..6
+Uitwisselingsmasker domein
+-
+Toelichting
+Gebroken positieve waarden waardoor decimalen achter de komma ontstaan, vormen geen natuurlijke getallen. Om een natuurlijk getal te verkrijgen, zal in die gevallen afronding op de nabijgelegen gehele waarde moeten plaatsvinden.
+
+STATUS LIGPLAATS EN STANDPLAATS
+
+Naam domein
+Status ligplaats en standplaats
+Definitie domein
+Een aanduiding van alle waarden die de status van een ligplaats en een standplaats kan aannemen.
+Herkomst definitie domein
+Grondslagen Basis Gebouwen Registratie versie 4.0
+Datum opname domein
+Augustus 2006
+Waardenverzameling domein
+Plaats aangewezen
+Plaats ingetrokken
+Formaat domein
+AN..80
+Uitwisselingsmasker domein
+-
+Toelichting
+Een statusaanduiding kent een limitatief karakter en kan uitsluitend een van de genoemde waarden aannemen.
+
+STATUS PAND
+
+Naam domein
+Status pand
+Definitie domein
+Een codering van de verschillende waarden die de status van een pand kan aannemen.
+Herkomst definitie domein
+Grondslagen Basis Gebouwen Registratie versie 2.3
+Datum opname domein
+Februari 2004
+Waardenverzameling domein
+Bouwvergunning verleend
+Niet gerealiseerd pand
+Bouw gestart
+Pand in gebruik (niet ingemeten)
+Pand in gebruik
+Sloopvergunning verleend 
+Pand gesloopt
+Pand buiten gebruik
+Formaat domein
+AN..80
+Uitwisselingsmasker domein
+
+Toelichting
+Een statusaanduiding kent een limitatief karakter en kan uitsluitend een van de genoemde waarden aannemen. Met de verschillende statuswaarden wordt het volgende bedoeld:
+* Bouwvergunning verleend: een nieuw pand dat nog niet is gebouwd maar waarvoor wel een bouwvergunning is verleend;
+* Niet gerealiseerd pand: een pand waarvoor een bouwvergunning was verleend, maar waarvan in een schriftelijke verklaring van een daartoe bevoegd ambtenaar is vastgesteld dat wordt afgezien van de bouw of waarvan de bouwvergunning is ingetrokken.
+* Bouw gestart: een pand waarvan de aanvrager van de bouwvergunning heeft gemeld dat de bouw is gestart of waarvan in een schriftelijke verklaring van een daartoe bevoegd ambtenaar is vastgesteld dat de feitelijke bouw is aangevangen door minimaal de aanleg van de fundering (waartoe niet het bouwrijp maken van een terrein wordt gerekend);
+* Pand in gebruik (niet ingemeten): een pand waarvan de aanvrager van de bouwvergunning heeft gemeld dat de bouw is voltooid of waarvan in een schriftelijke verklaring van een daartoe bevoegd ambtenaar is vastgesteld dat het pand feitelijk in gebruik is genomen voor bijvoorbeeld bewoning dan wel bedrijfsuitoefening of dat het weliswaar (nog) niet in gebruik is genomen maar naar het oordeel van de gemeente wel gebruiksgereed is;
+* Pand in gebruik: een pand dat feitelijk de status "Pand in gebruik (niet ingemeten)" had en waarvan de definitieve geometrie is ingemeten;
+* Sloopvergunning verleend: een pand waarvoor een sloopvergunning is verleend;
+* Pand gesloopt: een pand waarvan de aanvrager van de sloopvergunning heeft gemeld dat de sloop is voltooid of in een schriftelijke verklaring van een daartoe bevoegd ambtenaar is vastgesteld dat het pand is gesloopt;
+* Pand buiten gebruik: een pand dat in dusdanige bouwkundige staat is dat niet te verwachten is dat het pand zal worden hersteld en weer in gebruik zal worden genomen. 
+
+STATUS VERBLIJFSOBJECT
+
+Naam domein
+Status verblijfsobject
+Definitie domein
+Een aanduiding van alle waarden die de status van een verblijfsobject kan aannemen.
+Herkomst definitie domein
+Grondslagen Basis Gebouwen Registratie versie 4.0
+Datum opname domein
+Augustus 2006
+Waardenverzameling domein
+Verblijfsobject gevormd
+Niet gerealiseerd verblijfsobject
+Verblijfsobject in gebruik (niet ingemeten)
+Verblijfsobject in gebruik 
+Verblijfsobject ingetrokken
+Verblijfsobject buiten gebruik
+Formaat domein
+AN..80
+Uitwisselingsmasker domein
+-
+Toelichting
+Een statusaanduiding kent een limitatief karakter en kan uitsluitend een van de genoemde waarden aannemen. Met de verschillende statuswaarden wordt het volgende bedoeld:
+* Verblijfsobject gevormd: een nieuw verblijfsobject dat deel gaat uitmaken van een nog niet gebouwd pand waarvoor een bouwvergunning is verleend of dat wordt gerealiseerd in een reeds bestaand pand;
+* Niet gerealiseerd verblijfsobject: een verblijfsobject in een pand waarvoor een bouwvergunning was verleend of dat gerealiseerd zou worden in een reeds bestaand pand, maar waarvan in een schriftelijke verklaring van een daartoe bevoegd ambtenaar is vastgesteld dat wordt afgezien van de bouw of waarvan de bouwvergunning is ingetrokken.
+* Verblijfsobject in gebruik (niet ingemeten): een verblijfsobject waarvan de aanvrager van de bouwvergunning heeft gemeld dat de bouw is voltooid of waarvan in een schriftelijke verklaring van een daartoe bevoegd ambtenaar is vastgesteld dat het verblijfsobject feitelijk in gebruik is genomen voor bijvoorbeeld bewoning dan wel bedrijfsuitoefening of dat het weliswaar (nog) niet in gebruik is genomen maar naar het oordeel van de gemeente wel gebruiksgereed is;
+* Verblijfsobject in gebruik: een verblijfsobject dat feitelijk de status "Verblijfsobject in gebruik (niet ingemeten)" had en waarvan de definitieve geometrie is ingemeten;
+* Verblijfsobject ingetrokken: een verblijfsobject dat als zodanig opgehouden heeft te bestaan omdat de aanvrager van een sloopvergunning heeft gemeld dat de sloop is voltooid of in een schriftelijke verklaring van een daartoe bevoegd ambtenaar is vastgesteld dat het verblijfsobject als zodanig niet meer bestaat;
+* Verblijfsobject buiten gebruik: een verblijfsobject dat onderdeel uitmaakt van een pand dat in dusdanige bouwkundige staat is dat niet te verwachten is dat het pand zal worden hersteld en weer in gebruik zal worden genomen.
