@@ -15,3 +15,5 @@ Om de Basisregistratie Adressen en Gebouwen te kunnen laten functioneren is het 
 - [Afbakening van panden](pand.md)
 - [Afbakening van standplaatsen](standplaats.md)
 - [Afbakening van verblijfsobjecten](verblijfsobject.md)
+
+De documenten in deze werkruimte zijn concept-documenten, waaraan geen rechten kunnen worden ontleend.
